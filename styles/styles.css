@@ -682,7 +682,7 @@ span {
     text-align: center;
     border-radius: 11px;
   }
-  .skill:hover .description {
+  .skill:active .description {
     opacity: 1;
     border-radius: 11px;
   }
