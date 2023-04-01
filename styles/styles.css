@@ -1046,3 +1046,9 @@ span {
     padding-left: 5px;
   }
 }
+@media (max-width: 900px) {
+  .projects__project {
+    width: 250px;
+    height: 150px;
+  }
+}
