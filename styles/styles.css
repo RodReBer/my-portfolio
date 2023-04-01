@@ -611,6 +611,7 @@ span {
     display: flex;
     align-items: center;
     flex-flow: column nowrap;
+    margin-bottom: 50px;
   }
   .container-skills h1 {
     color: white;
