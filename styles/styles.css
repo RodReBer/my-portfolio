@@ -602,7 +602,7 @@ span {
 @media (max-width: 900px) {
   .container-skills {
     display: flex;
-    height: 100vh;
+    height: 100%;
     flex-flow: column nowrap;
     align-items: center;
     justify-content: space-between;
@@ -618,6 +618,7 @@ span {
     position: relative;
     font-size: calc(3vw + 2rem);
     margin-top: 50px;
+    text-align: center;
   }
   .container-skills h1 span {
     color: #ffb400;
