@@ -921,7 +921,7 @@ span {
     padding-left: 5px;
   }
 }
-@media (max-width: 431px) {
+@media (max-width: 434px) {
   .buttonmsg i {
     height: 76px;
     width: 76px;
