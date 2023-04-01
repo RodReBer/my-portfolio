@@ -970,6 +970,7 @@ span {
     max-height: 400px;
     min-height: 100px;
     border: none;
+    color: white;
   }
   .info-contact input:focus {
     outline: none;
@@ -998,6 +999,7 @@ span {
     border: none;
     padding: 5px 0px 5px 20px;
     font-size: 18px;
+    color: white;
   }
   .message-contact {
     width: 60vw;
