@@ -20,6 +20,10 @@ a {
 ul {
   list-style: none;
 }
+::selection {
+  color: white;
+  background: #ffb300d4;
+}
 .title-index {
   display: flex;
   flex-flow: column nowrap;
@@ -120,10 +124,6 @@ span {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-  }
-  ::selection {
-    color: white;
-    background: #ffb300d4;
   }
   .container-index {
     display: flex;
