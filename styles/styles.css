@@ -992,17 +992,20 @@ span {
   .info-contact {
     width: 60vw;
     display: flex;
-    flex-flow: column nowrap;
-    gap: 20px;
+    flex-flow: row nowrap;
+    gap: 15px;
   }
   .info-contact input {
-    width: 60vw;
+    width: 50%;
     border-radius: 20px;
     background-color: #2b2a2a;
     border: none;
     padding: 5px 0px 5px 20px;
     font-size: 18px;
     color: white;
+  }
+  .subject input{
+    width: 100%;
   }
   .message-contact {
     width: 60vw;
