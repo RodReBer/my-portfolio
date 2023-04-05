@@ -10,6 +10,8 @@
   /* border: 1px solid red; */
 }
 body {
+  width: 100%;
+  height: 100%;
   background-color: #111111;
 }
 /*general */
@@ -651,7 +653,7 @@ span {
   .skill {
     width: 120px;
     height: 120px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.1);
     border: 2px solid #ffb400;
     font-size: 16px;
     font-weight: 400;
@@ -749,7 +751,7 @@ span {
   .skill {
     width: 120px;
     height: 120px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.1);
     border: 2px solid #ffb400;
     font-size: 16px;
     font-weight: 400;
@@ -1004,7 +1006,7 @@ span {
     font-size: 18px;
     color: white;
   }
-  .subject input{
+  .subject input {
     width: 100%;
   }
   .message-contact {
