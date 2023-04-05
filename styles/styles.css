@@ -736,7 +736,7 @@ span {
     gap: 20px;
     height: 100%;
     width: 90vw;
-    max-width: 1000px;
+    max-width: 950px;
   }
   .categories {
     display: flex;
