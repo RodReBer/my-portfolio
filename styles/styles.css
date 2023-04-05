@@ -603,7 +603,6 @@ span {
   }
 }
 /*end about*/
-
 /*skills*/
 @media (max-width: 900px) {
   .container-skills {
@@ -687,6 +686,8 @@ span {
     justify-content: center;
     text-align: center;
     border-radius: 11px;
+    cursor: default;
+    user-select: none;
   }
   .skill:active .description {
     opacity: 1;
@@ -785,6 +786,8 @@ span {
     justify-content: center;
     text-align: center;
     border-radius: 11px;
+    cursor: default;
+    user-select: none;
   }
   .skill:hover .description {
     opacity: 1;
