@@ -63,7 +63,7 @@ span {
 .projects__project {
   width: 300px;
   height: 200px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.1);
   border: 2px solid #ffb400;
   font-size: 16px;
   font-weight: 400;
