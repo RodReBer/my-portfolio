@@ -744,7 +744,7 @@ span {
     align-self: center;
     gap: 5px;
     justify-content: space-around;
-    width: 100%;
+    width: 90%;
   }
   .categories a {
     padding: 0px 10px 0px 10px;
