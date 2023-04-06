@@ -2,8 +2,9 @@
   font-family: "popinsregular";
   src: url(../fonts/popinsregular.ttf);
 }
-:root{
-  --color: #ffb300;
+:root {
+  /* --color: #ffb300; */
+  --color: #00a6fb;
 }
 * {
   margin: 0;
