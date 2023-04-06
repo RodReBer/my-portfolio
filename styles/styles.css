@@ -785,11 +785,7 @@ span {
     cursor: default;
     user-select: none;
   }
-  /* .skill:hover .description {
-    opacity: 1;
-    border-radius: 11px;
-  } */
-  .languages:hover+.lan{
+  .skill:hover .description {
     opacity: 1;
     border-radius: 11px;
   }
