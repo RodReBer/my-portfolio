@@ -895,7 +895,7 @@ span {
     color: rgba(255, 255, 255, 0.587);
     padding-left: 20px;
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 200;
   }
   .buttonmsg {
     width: 60vw;
@@ -1027,6 +1027,7 @@ span {
     color: rgba(255, 255, 255, 0.587);
     padding-left: 20px;
     font-size: 18px;
+    font-weight: 200;
   }
   .buttonmsg {
     width: 50%;
