@@ -463,7 +463,7 @@ span {
   .container-info p {
     color: white;
   }
-  .container-info label {
+  .container-info h3 {
     color: rgba(255, 255, 255, 0.504);
     font-weight: 600;
   }
@@ -548,7 +548,7 @@ span {
   .container-info p {
     color: white;
   }
-  .container-info label {
+  .container-info h3 {
     color: rgba(255, 255, 255, 0.504);
     font-weight: 600;
   }
@@ -891,7 +891,7 @@ span {
     display: flex;
     flex-flow: column nowrap;
   }
-  .message-contact label {
+  .message-contact h3 {
     color: rgba(255, 255, 255, 0.587);
     padding-left: 20px;
   }
@@ -1021,7 +1021,7 @@ span {
     display: flex;
     flex-flow: column nowrap;
   }
-  .message-contact label {
+  .message-contact h3 {
     color: rgba(255, 255, 255, 0.587);
     padding-left: 20px;
   }
