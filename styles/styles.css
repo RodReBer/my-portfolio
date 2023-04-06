@@ -3,7 +3,7 @@
   src: url(../fonts/popinsregular.ttf);
 }
 :root{
-  --color: var(--color);
+  --color: var(#ffb300);
 }
 * {
   margin: 0;
