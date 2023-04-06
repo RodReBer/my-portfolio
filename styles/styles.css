@@ -894,6 +894,7 @@ span {
   .message-contact h2 {
     color: rgba(255, 255, 255, 0.587);
     padding-left: 20px;
+    font-size: 18px;
   }
   .buttonmsg {
     width: 60vw;
@@ -1024,6 +1025,7 @@ span {
   .message-contact h2 {
     color: rgba(255, 255, 255, 0.587);
     padding-left: 20px;
+    font-size: 18px;
   }
   .buttonmsg {
     width: 50%;
