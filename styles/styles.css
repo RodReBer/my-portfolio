@@ -789,7 +789,7 @@ span {
     opacity: 1;
     border-radius: 11px;
   } */
-  .languages:hover + .skill .lan{
+  .languages:hover + .lan{
     opacity: 1;
     border-radius: 11px;
   }
