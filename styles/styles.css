@@ -3,10 +3,10 @@
   src: url(../fonts/popinsregular.ttf);
 }
 :root {
-  /* --color: #ffb300; */
-  --color: #00a6fb;
-  /* --background: #111111; */
-  --background: #7f7f7f;
+  --color: #ffb300;
+  /* --color: #00a6fb; */
+  --background: #111111;
+  /* --background: #454545; */
 }
 * {
   margin: 0;
