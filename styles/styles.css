@@ -503,8 +503,7 @@ span {
 }
 @media (min-width: 901px) {
   .container-about h1 {
-    margin-top: 50px;
-    padding-bottom: 40px;
+    padding-top: 20px;
     font-size: calc(3vw + 1rem);
   }
   .container-about {
