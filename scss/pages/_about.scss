@@ -1,0 +1,189 @@
+  /*Start About*/
+@media (max-width: 900px) {
+    .container-about {
+      display: flex;
+      height: 100vh;
+      flex-flow: column nowrap;
+      align-items: center;
+    }
+    .main-about {
+      display: flex;
+      align-items: center;
+      flex-flow: column nowrap;
+    }
+    .container-about h1 {
+      color: white;
+      position: relative;
+      font-size: calc(3vw + 2rem);
+      top: 50px;
+    }
+    .container-about h1 span {
+      color: $primary-color;
+    }
+    .figure-about {
+      display: flex;
+      justify-content: center;
+    }
+    .figure-about img {
+      min-width: 100px;
+      width: 100%;
+      height: auto;
+    }
+    .info-about {
+      display: flex;
+      flex-flow: column nowrap;
+      padding: 0px 20px 0px 20px;
+      gap: 10px;
+    }
+    .info-about h2 {
+      color: white;
+      font-size: 35px;
+    }
+    .info-about .container-info {
+      display: flex;
+      flex-flow: row nowrap;
+      gap: 5vw;
+      justify-content: space-between;
+    }
+    .container-info p {
+      color: white;
+    }
+    .container-info h3 {
+      color: rgba(255, 255, 255, 0.504);
+      font-weight: 600;
+    }
+    .container-info .row1,
+    .container-info .row2 {
+      display: flex;
+      flex-flow: column nowrap;
+      gap: 15px;
+    }
+    .freelance #green {
+      color: #5be85b;
+    }
+    .info-about a {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      font-size: 40px;
+      text-decoration: none;
+      color: white;
+      text-align: center;
+      align-items: center;
+      border: 1px solid $primary-color;
+      border-radius: 11px;
+    }
+    .info-about a span {
+      font-size: 30px;
+      padding: 0px 1% 0px;
+    }
+    .info-about a i {
+      background-color: $primary-color;
+      width: 70px;
+      border: 15px solid $primary-color;
+      border-radius: 10px;
+      height: 100%;
+    }
+  }
+  @media (min-width: 901px) {
+    .container-about h1 {
+      padding-top: 20px;
+      font-size: calc(3vw + 1rem);
+    }
+    .container-about {
+      display: flex;
+      height: 100vh;
+      flex-flow: column nowrap;
+      align-items: center;
+      justify-content: center;
+    }
+    .main-about {
+      width: 80%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      flex-flow: column nowrap;
+      justify-content: center;
+    }
+    .container-about .main-about .title h1 {
+      color: white;
+    }
+    .container-about .main-about .title h1 span {
+      color: $primary-color;
+    }
+    .content-about {
+      height: 100%;
+      width: 90vw;
+      display: flex;
+      flex-flow: row-reverse nowrap;
+      justify-content: space-around;
+      margin-bottom: 100px;
+    }
+    .info-about .title {
+      color: white;
+      font-size: 35px;
+    }
+    .info-about .container-info {
+      display: flex;
+      flex-flow: row nowrap;
+      gap: 5vw;
+      justify-content: space-between;
+    }
+    .container-info p {
+      color: white;
+    }
+    .container-info h3 {
+      color: rgba(255, 255, 255, 0.504);
+      font-weight: 600;
+    }
+    .container-info .row1,
+    .container-info .row2 {
+      display: flex;
+      flex-flow: column nowrap;
+      gap: 15px;
+    }
+    .freelance #green {
+      color: #5be85b;
+    }
+    .info-about a {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      font-size: 40px;
+      text-decoration: none;
+      color: white;
+      text-align: center;
+      align-items: center;
+      border: 1px solid $primary-color;
+      border-radius: 11px;
+    }
+    .info-about a span {
+      font-size: 30px;
+      padding: 0px 1% 0px;
+    }
+    .info-about a i {
+      background-color: $primary-color;
+      width: 70px;
+      border: 15px solid $primary-color;
+      border-radius: 10px;
+      height: 100%;
+    }
+    .content-about .info-about {
+      display: flex;
+      flex-flow: column nowrap;
+      gap: 30px;
+      justify-content: center;
+    }
+    .figure-about {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      width: 600px;
+    }
+    .figure-about img {
+      min-width: 400px;
+      width: 100%;
+      height: auto;
+    }
+  }
+  /*End About*/
