@@ -403,7 +403,7 @@ span {
     border-radius: 20px;
     background-color: #2b2a2a;
     resize: vertical;
-    max-height: 400px;
+    max-height: 350px;
     min-height: 100px;
     border: 1px solid #2b2a2a;
     color: white;
