@@ -858,7 +858,7 @@ span {
     flex-flow: column nowrap;
   }
   .container-index__header {
-    background-color: #111111;
+    background-color: rgba(17, 17, 17, 0.5960784314);
     height: 100%;
     display: flex;
     position: fixed;
@@ -1001,6 +1001,7 @@ span {
   }
 }
 /*End footer*/
+/*Start nav*/
 @media (max-width: 900px) {
   .container-index__header {
     display: flex;
@@ -1082,5 +1083,6 @@ span {
     background-color: #ffb300;
   }
 }
+/*End nav*/
 
 /*# sourceMappingURL=styles.css.map */
