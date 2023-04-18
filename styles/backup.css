@@ -270,7 +270,7 @@ span {
     flex-flow: column nowrap;
   }
   .container-index__header {
-    background-color: var(--background)00;
+    background-color: var(--background) 00;
     height: 100%;
     display: flex;
     position: fixed;
@@ -280,7 +280,7 @@ span {
   }
   /*Footer*/
   .footer {
-    background-color: var(--background)92;
+    background-color: var(--background) 92;
     width: 100%;
     display: flex;
     bottom: 0;
@@ -1066,4 +1066,3 @@ span {
     padding-left: 5px;
   }
 }
-
