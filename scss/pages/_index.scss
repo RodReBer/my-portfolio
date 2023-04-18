@@ -12,150 +12,145 @@
   font-size: calc(3vw + 2rem);
 }
 
-@media (max-width: 900px) {
-  body {
-    overflow: scroll;
-  }
-  .contenedor {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-  }
-  .container-index {
-    display: flex;
-    height: 100vh;
-    flex-flow: column nowrap;
-    justify-content: space-between;
-  }
-  /*presentation*/
-  .container-index__main {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-  }
-  .presentation h1 {
-    text-align: center;
-  }
-  .presentation p {
-    font-size: 20px;
-    padding: 0px 10vw 0px 10vw;
-    color: white;
-    text-align: justify;
-  }
-  .figure-home {
-    display: flex;
-    justify-content: center;
-  }
-  .figure-home img {
-    min-width: 100px;
-    width: 100%;
-    height: auto;
-  }
-  .presentation a {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    font-size: 40px;
-    text-decoration: none;
-    color: white;
-    align-items: center;
-    border: 1px solid $primary-color;
-    border-radius: 11px;
-    margin: 10px 10vw 0px 10vw;
-  }
-  .hire__icon {
-    width: 60px;
-    text-align: center;
-    background-color: $primary-color;
-    border-radius: 9px;
-  }
+@include mobile(){
+    body {
+      overflow: scroll;
+    }
+    .contenedor {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+    }
+    .container-index {
+      display: flex;
+      height: 100vh;
+      flex-flow: column nowrap;
+      justify-content: space-between;
+    }
+    /*presentation*/
+    .container-index__main {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+    }
+    .presentation h1 {
+      text-align: center;
+    }
+    .presentation p {
+      font-size: 20px;
+      padding: 0px 10vw 0px 10vw;
+      color: white;
+      text-align: justify;
+    }
+    .figure-home {
+      display: flex;
+      justify-content: center;
+    }
+    .figure-home img {
+      min-width: 100px;
+      width: 100%;
+      height: auto;
+    }
+    .presentation a {
+      @include flex-box(space-between, center);
+      flex-flow: row nowrap;
+      font-size: 40px;
+      text-decoration: none;
+      color: white;
+      border: 1px solid $primary-color;
+      border-radius: 11px;
+      margin: 10px 10vw 0px 10vw;
+    }
+    .hire__icon {
+      width: 60px;
+      text-align: center;
+      background-color: $primary-color;
+      border-radius: 9px;
+    }
+  
 }
-@media (min-width: 901px) {
-  .container-index {
-    display: flex;
-    height: 100vh;
-    flex-flow: column nowrap;
-  }
-  .container-index__header {
-    background-color: #11111198;
-    height: 100%;
-    display: flex;
-    position: fixed;
-    right: 0;
-    align-items: center;
-    margin-right: 20px;
-  }
-  /*main*/
-  .container-index__main {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    flex-flow: column nowrap;
-    justify-content: space-evenly;
-  }
-  .container-index__main .contenedor {
-    width: 100%;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: 5%;
-  }
-  .container-index__main .figure-home img {
-    min-width: 400px;
-    width: 100%;
-    height: auto;
-  }
-  .container-index__main .figure-home {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    width: 600px;
-  }
-  .presentation {
-    max-width: 500px;
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin-right: 90px;
-  }
-  .presentation h1 {
-    display: flex;
-    flex-flow: column nowrap;
-    color: $primary-color;
-    font-size: calc(2vw + 1rem);
-  }
-  .presentation p {
-    max-width: 520px;
-    line-height: 25px;
-    font-size: 20px;
-    color: white;
-    text-align: justify;
-  }
-  .presentation a {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    font-size: 40px;
-    text-decoration: none;
-    color: white;
-    text-align: center;
-    align-items: center;
-    border: 1px solid $primary-color;
-    border-radius: 11px;
-  }
-  .presentation a span {
-    padding: 5px 10% 5px;
-  }
-  .presentation a i {
-    background-color: $primary-color;
-    width: 70px;
-    border: 15px solid $primary-color;
-    border-radius: 10px;
-    height: 100%;
-  }
-  /*End main*/
+@include desktop(){
+    .container-index {
+      display: flex;
+      height: 100vh;
+      flex-flow: column nowrap;
+    }
+    .container-index__header {
+      background-color: #11111198;
+      height: 100%;
+      display: flex;
+      position: fixed;
+      right: 0;
+      align-items: center;
+      margin-right: 20px;
+    }
+    /*main*/
+    .container-index__main {
+      @include flex-box(space-evenly, center);
+      height: 100%;
+      flex-flow: column nowrap;
+    }
+    .container-index__main .contenedor {
+      @include flex-box(space-evenly, center);
+      width: 100%;
+      flex-flow: row nowrap;
+      gap: 5%;
+    }
+    .container-index__main .figure-home img {
+      min-width: 400px;
+      width: 100%;
+      height: auto;
+    }
+    .container-index__main .figure-home {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      width: 600px;
+    }
+    .presentation {
+      max-width: 500px;
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-right: 90px;
+    }
+    .presentation h1 {
+      display: flex;
+      flex-flow: column nowrap;
+      color: $primary-color;
+      font-size: calc(2vw + 1rem);
+    }
+    .presentation p {
+      max-width: 520px;
+      line-height: 25px;
+      font-size: 20px;
+      color: white;
+      text-align: justify;
+    }
+    .presentation a {
+      @include flex-box(space-between, center);
+      flex-flow: row nowrap;
+      font-size: 40px;
+      text-decoration: none;
+      color: white;
+      text-align: center;
+      border: 1px solid $primary-color;
+      border-radius: 11px;
+    }
+    .presentation a span {
+      padding: 5px 10% 5px;
+    }
+    .presentation a i {
+      background-color: $primary-color;
+      width: 70px;
+      border: 15px solid $primary-color;
+      border-radius: 10px;
+      height: 100%;
+    }
+    /*End main*/
+  
 }
+
 /*end index*/

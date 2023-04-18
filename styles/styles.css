@@ -106,13 +106,13 @@ span {
   }
   .info-about a {
     display: flex;
-    flex-flow: row nowrap;
     justify-content: space-between;
+    align-items: center;
+    flex-flow: row nowrap;
     font-size: 40px;
     text-decoration: none;
     color: white;
     text-align: center;
-    align-items: center;
     border: 1px solid #ffb300;
     border-radius: 11px;
   }
@@ -135,18 +135,18 @@ span {
   }
   .container-about {
     display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
     flex-flow: column nowrap;
-    align-items: center;
-    justify-content: center;
   }
   .main-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 80%;
     height: 100%;
-    display: flex;
-    align-items: center;
     flex-flow: column nowrap;
-    justify-content: center;
   }
   .container-about .main-about .title h1 {
     color: white;
@@ -190,13 +190,13 @@ span {
   }
   .info-about a {
     display: flex;
-    flex-flow: row nowrap;
     justify-content: space-between;
+    align-items: center;
+    flex-flow: row nowrap;
     font-size: 40px;
     text-decoration: none;
     color: white;
     text-align: center;
-    align-items: center;
     border: 1px solid #ffb300;
     border-radius: 11px;
   }
@@ -251,19 +251,19 @@ span {
     align-items: center;
   }
   .main-skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 80%;
     height: 100%;
-    display: flex;
-    align-items: center;
     flex-flow: column nowrap;
-    justify-content: center;
   }
   .container-contact {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 100vh;
     flex-flow: column nowrap;
-    align-items: center;
-    justify-content: space-between;
   }
   .message-contact textarea {
     padding-top: 10px;
@@ -320,16 +320,16 @@ span {
     font-weight: 200;
   }
   .buttonmsg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 60vw;
     background-color: #111111;
-    display: flex;
     flex-flow: row nowrap;
     font-size: 25px;
     text-decoration: none;
     color: white;
-    justify-content: space-between;
     text-align: center;
-    align-items: center;
     border: 1px solid #ffb300;
     border-radius: 11px;
     gap: 10px;
@@ -337,13 +337,13 @@ span {
   }
   .buttonmsg i {
     display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #ffb300;
     width: 65px;
     height: 65px;
     border: 30px solid #ffb300;
     border-radius: 10px;
-    align-items: center;
-    justify-content: center;
   }
   .button-contact {
     height: auto;
@@ -353,12 +353,6 @@ span {
   }
   .buttonmsg span {
     padding-left: 5px;
-  }
-}
-@media (max-width: 440px) {
-  .buttonmsg i {
-    height: 76px;
-    width: 76px;
   }
 }
 @media (min-width: 901px) {
@@ -380,19 +374,19 @@ span {
     margin-top: 35px;
   }
   .main-skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 80%;
     height: 100%;
-    display: flex;
-    align-items: center;
     flex-flow: column nowrap;
-    justify-content: center;
   }
   .container-contact {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 100vh;
     flex-flow: column nowrap;
-    align-items: center;
-    justify-content: space-between;
   }
   .message-contact textarea {
     padding-top: 10px;
@@ -452,27 +446,27 @@ span {
     font-weight: 200;
   }
   .buttonmsg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 50%;
     background-color: #111111;
-    display: flex;
     flex-flow: row nowrap;
     font-size: 25px;
     color: white;
-    justify-content: space-between;
     text-align: center;
-    align-items: center;
     border: 1px solid #ffb300;
     border-radius: 11px;
   }
   .buttonmsg i {
     display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #ffb300;
     width: 60px;
     height: 60px;
     border: 20px solid #ffb300;
     border-radius: 10px;
-    align-items: center;
-    justify-content: center;
   }
   .button-contact {
     height: auto;
@@ -482,6 +476,12 @@ span {
   }
   .buttonmsg span {
     padding-left: 5px;
+  }
+}
+@media (max-width: 440px) {
+  .buttonmsg i {
+    height: 76px;
+    width: 76px;
   }
 }
 /*End Contact*/
@@ -504,6 +504,9 @@ span {
 }
 
 .projects__project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 300px;
   height: 200px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -511,9 +514,6 @@ span {
   font-size: 16px;
   font-weight: 400;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: 11px;
   position: relative;
 }
@@ -531,9 +531,9 @@ span {
 
 .projects {
   display: flex;
-  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
   width: 80%;
   height: auto;
   margin-bottom: 60px;
@@ -541,15 +541,18 @@ span {
 }
 
 .main-project {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #111111;
   height: 100%;
-  display: flex;
-  align-items: center;
   flex-flow: column nowrap;
-  justify-content: space-between;
 }
 
 .description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   top: 0;
   left: 0;
@@ -558,9 +561,6 @@ span {
   background-color: rgba(255, 255, 255, 0.655);
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   text-align: center;
   border-radius: 11px;
 }
@@ -584,10 +584,10 @@ span {
 @media (max-width: 900px) {
   .container-skills {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 100%;
     flex-flow: column nowrap;
-    align-items: center;
-    justify-content: space-between;
   }
   .main-skills {
     display: flex;
@@ -631,6 +631,9 @@ span {
     text-align: center;
   }
   .skill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 120px;
     height: 120px;
     background-color: rgba(255, 255, 255, 0.1);
@@ -638,9 +641,6 @@ span {
     font-size: 16px;
     font-weight: 400;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-radius: 11px;
     position: relative;
   }
@@ -650,6 +650,9 @@ span {
     border-radius: 11px;
   }
   .description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     top: 0;
     left: 0;
@@ -658,9 +661,6 @@ span {
     background-color: rgba(255, 255, 255, 0.655);
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     text-align: center;
     border-radius: 11px;
     cursor: default;
@@ -679,18 +679,18 @@ span {
 @media (min-width: 901px) {
   .container-skills {
     display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
     flex-flow: column nowrap;
-    align-items: center;
-    justify-content: center;
   }
   .main-skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 80%;
     height: 100%;
-    display: flex;
-    align-items: center;
     flex-flow: column nowrap;
-    justify-content: center;
   }
   .container-skills h1 {
     color: white;
@@ -731,6 +731,9 @@ span {
     text-align: center;
   }
   .skill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 150px;
     height: 150px;
     background-color: rgba(255, 255, 255, 0.1);
@@ -738,9 +741,6 @@ span {
     font-size: 16px;
     font-weight: 400;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-radius: 11px;
     position: relative;
   }
@@ -749,6 +749,9 @@ span {
     height: 85px;
   }
   .description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     top: 0;
     left: 0;
@@ -757,9 +760,6 @@ span {
     background-color: rgba(255, 255, 255, 0.655);
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     text-align: center;
     border-radius: 11px;
     cursor: default;
@@ -832,12 +832,12 @@ span {
   }
   .presentation a {
     display: flex;
-    flex-flow: row nowrap;
     justify-content: space-between;
+    align-items: center;
+    flex-flow: row nowrap;
     font-size: 40px;
     text-decoration: none;
     color: white;
-    align-items: center;
     border: 1px solid #ffb300;
     border-radius: 11px;
     margin: 10px 10vw 0px 10vw;
@@ -866,18 +866,18 @@ span {
   }
   /*main*/
   .container-index__main {
-    height: 100%;
     display: flex;
-    align-items: center;
-    flex-flow: column nowrap;
     justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    flex-flow: column nowrap;
   }
   .container-index__main .contenedor {
-    width: 100%;
     display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
     justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    flex-flow: row nowrap;
     gap: 5%;
   }
   .container-index__main .figure-home img {
@@ -915,13 +915,13 @@ span {
   }
   .presentation a {
     display: flex;
-    flex-flow: row nowrap;
     justify-content: space-between;
+    align-items: center;
+    flex-flow: row nowrap;
     font-size: 40px;
     text-decoration: none;
     color: white;
     text-align: center;
-    align-items: center;
     border: 1px solid #ffb300;
     border-radius: 11px;
   }

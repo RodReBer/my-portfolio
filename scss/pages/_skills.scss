@@ -1,11 +1,9 @@
 /*Start Skills*/
-@media (max-width: 900px) {
+@include mobile() {
   .container-skills {
-    display: flex;
+    @include flex-box(space-between, center);
     height: 100%;
     flex-flow: column nowrap;
-    align-items: center;
-    justify-content: space-between;
   }
   .main-skills {
     display: flex;
@@ -49,6 +47,7 @@
     text-align: center;
   }
   .skill {
+    @include flex-center();
     width: 120px;
     height: 120px;
     background-color: rgba(255, 255, 255, 0.1);
@@ -56,9 +55,6 @@
     font-size: 16px;
     font-weight: 400;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-radius: 11px;
     position: relative;
   }
@@ -68,6 +64,7 @@
     border-radius: 11px;
   }
   .description {
+    @include flex-center();
     position: absolute;
     top: 0;
     left: 0;
@@ -76,9 +73,6 @@
     background-color: rgba(255, 255, 255, 0.655);
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     text-align: center;
     border-radius: 11px;
     cursor: default;
@@ -94,21 +88,17 @@
     font-weight: 900;
   }
 }
-@media (min-width: 901px) {
+@include desktop() {
   .container-skills {
-    display: flex;
+    @include flex-center();
     height: 100vh;
     flex-flow: column nowrap;
-    align-items: center;
-    justify-content: center;
   }
   .main-skills {
+    @include flex-center();
     width: 80%;
     height: 100%;
-    display: flex;
-    align-items: center;
     flex-flow: column nowrap;
-    justify-content: center;
   }
   .container-skills h1 {
     color: white;
@@ -149,6 +139,7 @@
     text-align: center;
   }
   .skill {
+    @include flex-center();
     width: 150px;
     height: 150px;
     background-color: rgba(255, 255, 255, 0.1);
@@ -156,9 +147,6 @@
     font-size: 16px;
     font-weight: 400;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-radius: 11px;
     position: relative;
   }
@@ -167,6 +155,7 @@
     height: 85px;
   }
   .description {
+    @include flex-center();
     position: absolute;
     top: 0;
     left: 0;
@@ -175,9 +164,6 @@
     background-color: rgba(255, 255, 255, 0.655);
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     text-align: center;
     border-radius: 11px;
     cursor: default;

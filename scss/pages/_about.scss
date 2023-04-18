@@ -1,5 +1,5 @@
 /*Start About*/
-@media (max-width: 900px) {
+@include mobile() {
   .container-about {
     display: flex;
     height: 100vh;
@@ -62,14 +62,12 @@
     color: #5be85b;
   }
   .info-about a {
-    display: flex;
+    @include flex-box(space-between, center);
     flex-flow: row nowrap;
-    justify-content: space-between;
     font-size: 40px;
     text-decoration: none;
     color: white;
     text-align: center;
-    align-items: center;
     border: 1px solid $primary-color;
     border-radius: 11px;
   }
@@ -85,25 +83,21 @@
     height: 100%;
   }
 }
-@media (min-width: 901px) {
+@include desktop() {
   .container-about h1 {
     padding-top: 20px;
     font-size: calc(3vw + 1rem);
   }
   .container-about {
-    display: flex;
+    @include flex-center();
     height: 100vh;
     flex-flow: column nowrap;
-    align-items: center;
-    justify-content: center;
   }
   .main-about {
+    @include flex-center();
     width: 80%;
     height: 100%;
-    display: flex;
-    align-items: center;
     flex-flow: column nowrap;
-    justify-content: center;
   }
   .container-about .main-about .title h1 {
     color: white;
@@ -146,14 +140,12 @@
     color: #5be85b;
   }
   .info-about a {
-    display: flex;
+    @include flex-box(space-between, center);
     flex-flow: row nowrap;
-    justify-content: space-between;
     font-size: 40px;
     text-decoration: none;
     color: white;
     text-align: center;
-    align-items: center;
     border: 1px solid $primary-color;
     border-radius: 11px;
   }

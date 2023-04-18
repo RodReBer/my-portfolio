@@ -37,3 +37,24 @@ span {
   color: white;
 }
 /*End General*/
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flex-box($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+@mixin mobile() {
+  @media (max-width: 900px){
+    @content;
+  }
+}
+@mixin desktop() {
+  @media (min-width: 901px){
+    @content;
+  }
+}
