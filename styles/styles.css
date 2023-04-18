@@ -490,8 +490,8 @@ span {
   color: white;
   position: relative;
   font-size: calc(3vw + 1rem);
-  margin-top: 50px;
-  padding-bottom: 40px;
+  margin-top: 20px;
+  padding-bottom: 30px;
 }
 
 .container-project h1 span {
