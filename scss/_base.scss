@@ -2,6 +2,7 @@
   font-family: "popinsregular";
   src: url(../fonts/popinsregular.ttf);
 }
+/*Reset*/
 * {
   margin: 0;
   padding: 0;
@@ -16,6 +17,7 @@ $color-portfolio: (
 );
 /*Start General*/
 body {
+  font-display: swap;
   width: 100%;
   height: 100%;
   background-color: map-get($color-portfolio, background);
