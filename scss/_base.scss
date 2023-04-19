@@ -14,7 +14,7 @@
 $color-portfolio: (
   primary: #ffb300,
   secondary: #2b2a2a,
-  background: #111111
+  background: #111111,
 );
 /*Start General*/
 body {
@@ -39,6 +39,9 @@ ul {
 }
 span {
   color: white;
+}
+.freelance #green {
+  color: #5be85b;
 }
 /*End General*/
 

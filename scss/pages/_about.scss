@@ -5,105 +5,102 @@
     height: 100vh;
     flex-flow: column nowrap;
     align-items: center;
+    & h1 {
+      color: white;
+      position: relative;
+      font-size: calc(3vw + 2rem);
+      top: 50px;
+      & span {
+        color: map-get($color-portfolio, primary);
+      }
+    }
   }
   .main-about {
     display: flex;
     align-items: center;
     flex-flow: column nowrap;
   }
-  .container-about h1 {
-    color: white;
-    position: relative;
-    font-size: calc(3vw + 2rem);
-    top: 50px;
-  }
-  .container-about h1 span {
-    color: map-get($color-portfolio, primary);
-  }
   .figure-about {
     display: flex;
     justify-content: center;
-  }
-  .figure-about img {
-    min-width: 100px;
-    width: 100%;
-    height: auto;
+    & img {
+      min-width: 100px;
+      width: 100%;
+      height: auto;
+    }
   }
   .info-about {
     display: flex;
     flex-flow: column nowrap;
     padding: 0px 20px 0px 20px;
     gap: 10px;
-  }
-  .info-about h2 {
-    color: white;
-    font-size: 35px;
-  }
-  .info-about .container-info {
-    display: flex;
-    flex-flow: row nowrap;
-    gap: 5vw;
-    justify-content: space-between;
-  }
-  .container-info p {
-    color: white;
-  }
-  .container-info h3 {
-    color: rgba(255, 255, 255, 0.504);
-    font-weight: 600;
-  }
-  .container-info .row1,
-  .container-info .row2 {
-    display: flex;
-    flex-flow: column nowrap;
-    gap: 15px;
-  }
-  .freelance #green {
-    color: #5be85b;
-  }
-  .info-about a {
-    @include flex-box(space-between, center);
-    flex-flow: row nowrap;
-    font-size: 40px;
-    text-decoration: none;
-    color: white;
-    text-align: center;
-    border: 1px solid map-get($color-portfolio, primary);
-    border-radius: 11px;
-  }
-  .info-about a span {
-    font-size: 30px;
-    padding: 0px 1% 0px;
-  }
-  .info-about a i {
-    background-color: map-get($color-portfolio, primary);
-    width: 70px;
-    border: 15px solid map-get($color-portfolio, primary);
-    border-radius: 10px;
-    height: 100%;
+    & a {
+      @include flex-box(space-between, center);
+      flex-flow: row nowrap;
+      font-size: 40px;
+      text-decoration: none;
+      color: white;
+      text-align: center;
+      border: 1px solid map-get($color-portfolio, primary);
+      border-radius: 11px;
+      & span {
+        font-size: 30px;
+        padding: 0px 1% 0px;
+      }
+      & i {
+        background-color: map-get($color-portfolio, primary);
+        width: 70px;
+        border: 15px solid map-get($color-portfolio, primary);
+        border-radius: 10px;
+        height: 100%;
+      }
+    }
+    & h2 {
+      color: white;
+      font-size: 35px;
+    }
+    & .container-info {
+      display: flex;
+      flex-flow: row nowrap;
+      gap: 5vw;
+      justify-content: space-between;
+      & p {
+        color: white;
+      }
+      & h3 {
+        color: rgba(255, 255, 255, 0.504);
+        font-weight: 600;
+      }
+      & .row1,
+      .row2 {
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 15px;
+      }
+    }
   }
 }
 @include desktop() {
-  .container-about h1 {
-    padding-top: 20px;
-    font-size: calc(3vw + 1rem);
-  }
   .container-about {
     @include flex-center();
     height: 100vh;
     flex-flow: column nowrap;
+    & h1 {
+      padding-top: 20px;
+      font-size: calc(3vw + 1rem);
+    }
+    & .main-about .title h1 {
+      color: white;
+      & span {
+        color: map-get($color-portfolio, primary);
+      }
+    }
   }
   .main-about {
     @include flex-center();
     width: 80%;
     height: 100%;
     flex-flow: column nowrap;
-  }
-  .container-about .main-about .title h1 {
-    color: white;
-  }
-  .container-about .main-about .title h1 span {
-    color: map-get($color-portfolio, primary);
   }
   .content-about {
     height: 100%;
@@ -112,16 +109,22 @@
     flex-flow: row-reverse nowrap;
     justify-content: space-around;
     margin-bottom: 100px;
-  }
-  .info-about .title {
-    color: white;
-    font-size: 35px;
-  }
-  .info-about .container-info {
-    display: flex;
-    flex-flow: row nowrap;
-    gap: 5vw;
-    justify-content: space-between;
+    & .info-about {
+      display: flex;
+      flex-flow: column nowrap;
+      gap: 30px;
+      justify-content: center;
+      & .title {
+        color: white;
+        font-size: 35px;
+      }
+      & .container-info {
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 5vw;
+        justify-content: space-between;
+      }
+    }
   }
   .container-info p {
     color: white;
@@ -136,9 +139,6 @@
     flex-flow: column nowrap;
     gap: 15px;
   }
-  .freelance #green {
-    color: #5be85b;
-  }
   .info-about a {
     @include flex-box(space-between, center);
     flex-flow: row nowrap;
@@ -148,34 +148,28 @@
     text-align: center;
     border: 1px solid map-get($color-portfolio, primary);
     border-radius: 11px;
-  }
-  .info-about a span {
-    font-size: 30px;
-    padding: 0px 1% 0px;
-  }
-  .info-about a i {
-    background-color: map-get($color-portfolio, primary);
-    width: 70px;
-    border: 15px solid map-get($color-portfolio, primary);
-    border-radius: 10px;
-    height: 100%;
-  }
-  .content-about .info-about {
-    display: flex;
-    flex-flow: column nowrap;
-    gap: 30px;
-    justify-content: center;
+    & span {
+      font-size: 30px;
+      padding: 0px 1% 0px;
+    }
+    & i {
+      background-color: map-get($color-portfolio, primary);
+      width: 70px;
+      border: 15px solid map-get($color-portfolio, primary);
+      border-radius: 10px;
+      height: 100%;
+    }
   }
   .figure-about {
     display: flex;
     align-items: center;
     height: 100%;
     width: 600px;
-  }
-  .figure-about img {
-    min-width: 400px;
-    width: 100%;
-    height: auto;
+    & img {
+      min-width: 400px;
+      width: 100%;
+      height: auto;
+    }
   }
 }
 /*End About*/

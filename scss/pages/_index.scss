@@ -12,70 +12,68 @@
   font-size: calc(3vw + 2rem);
 }
 
-@include mobile(){
-    body {
-      overflow: scroll;
-    }
-    .contenedor {
+@include mobile() {
+  body {
+    overflow: scroll;
+  }
+  .contenedor {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+  .container-index {
+    display: flex;
+    height: 100vh;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    &__main {
       display: flex;
       flex-flow: column nowrap;
       align-items: center;
     }
-    .container-index {
-      display: flex;
-      height: 100vh;
-      flex-flow: column nowrap;
-      justify-content: space-between;
-    }
-    /*presentation*/
-    .container-index__main {
-      display: flex;
-      flex-flow: column nowrap;
-      align-items: center;
-    }
-    .presentation h1 {
-      text-align: center;
-    }
-    .presentation p {
-      font-size: 20px;
-      padding: 0px 10vw 0px 10vw;
-      color: white;
-      text-align: justify;
-    }
-    .figure-home {
-      display: flex;
-      justify-content: center;
-    }
-    .figure-home img {
+  }
+  /*presentation*/
+  .presentation h1 {
+    text-align: center;
+  }
+  .presentation p {
+    font-size: 20px;
+    padding: 0px 10vw 0px 10vw;
+    color: white;
+    text-align: justify;
+  }
+  .figure-home {
+    display: flex;
+    justify-content: center;
+    & img {
       min-width: 100px;
       width: 100%;
       height: auto;
     }
-    .presentation a {
-      @include flex-box(space-between, center);
-      flex-flow: row nowrap;
-      font-size: 40px;
-      text-decoration: none;
-      color: white;
-      border: 1px solid map-get($color-portfolio, primary);
-      border-radius: 11px;
-      margin: 10px 10vw 0px 10vw;
-    }
-    .hire__icon {
-      width: 60px;
-      text-align: center;
-      background-color: map-get($color-portfolio, primary);
-      border-radius: 9px;
-    }
-  
+  }
+  .presentation a {
+    @include flex-box(space-between, center);
+    flex-flow: row nowrap;
+    font-size: 40px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid map-get($color-portfolio, primary);
+    border-radius: 11px;
+    margin: 10px 10vw 0px 10vw;
+  }
+  .hire__icon {
+    width: 60px;
+    text-align: center;
+    background-color: map-get($color-portfolio, primary);
+    border-radius: 9px;
+  }
 }
-@include desktop(){
-    .container-index {
-      display: flex;
-      height: 100vh;
-      flex-flow: column nowrap;
-    }
-    .container-index__header {
+@include desktop() {
+  .container-index {
+    display: flex;
+    height: 100vh;
+    flex-flow: column nowrap;
+    &__header {
       background-color: #11111198;
       height: 100%;
       display: flex;
@@ -84,52 +82,51 @@
       align-items: center;
       margin-right: 20px;
     }
-    /*main*/
-    .container-index__main {
+    &__main {
       @include flex-box(space-evenly, center);
       height: 100%;
       flex-flow: column nowrap;
+      & .contenedor {
+        @include flex-box(space-evenly, center);
+        width: 100%;
+        flex-flow: row nowrap;
+        gap: 5%;
+      }
+      & .figure-home {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        width: 600px;
+        & img {
+          min-width: 400px;
+          width: 100%;
+          height: auto;
+        }
+      }
     }
-    .container-index__main .contenedor {
-      @include flex-box(space-evenly, center);
-      width: 100%;
-      flex-flow: row nowrap;
-      gap: 5%;
-    }
-    .container-index__main .figure-home img {
-      min-width: 400px;
-      width: 100%;
-      height: auto;
-    }
-    .container-index__main .figure-home {
-      display: flex;
-      align-items: center;
-      height: 100%;
-      width: 600px;
-    }
-    .presentation {
-      max-width: 500px;
-      width: 100%;
-      height: auto;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      margin-right: 90px;
-    }
-    .presentation h1 {
+  }
+  .presentation {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-right: 90px;
+    & h1 {
       display: flex;
       flex-flow: column nowrap;
       color: map-get($color-portfolio, primary);
       font-size: calc(2vw + 1rem);
     }
-    .presentation p {
+    & p {
       max-width: 520px;
       line-height: 25px;
       font-size: 20px;
       color: white;
       text-align: justify;
     }
-    .presentation a {
+    & a {
       @include flex-box(space-between, center);
       flex-flow: row nowrap;
       font-size: 40px;
@@ -138,19 +135,17 @@
       text-align: center;
       border: 1px solid map-get($color-portfolio, primary);
       border-radius: 11px;
+      & span {
+        padding: 5px 10% 5px;
+      }
+      & i {
+        background-color: map-get($color-portfolio, primary);
+        width: 70px;
+        border: 15px solid map-get($color-portfolio, primary);
+        border-radius: 10px;
+        height: 100%;
+      }
     }
-    .presentation a span {
-      padding: 5px 10% 5px;
-    }
-    .presentation a i {
-      background-color: map-get($color-portfolio, primary);
-      width: 70px;
-      border: 15px solid map-get($color-portfolio, primary);
-      border-radius: 10px;
-      height: 100%;
-    }
-    /*End main*/
-  
+  }
 }
-
 /*end index*/

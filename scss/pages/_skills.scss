@@ -4,22 +4,22 @@
     @include flex-box(space-between, center);
     height: 100%;
     flex-flow: column nowrap;
+    & h1 {
+      color: white;
+      position: relative;
+      font-size: calc(3vw + 2rem);
+      margin-top: 50px;
+      text-align: center;
+      & span {
+        color: map-get($color-portfolio, primary);
+      }
+    }
   }
   .main-skills {
-    display: flex;
-    align-items: center;
+    @include flex-center();
+    width: 80%;
+    height: 100%;
     flex-flow: column nowrap;
-    margin-bottom: 50px;
-  }
-  .container-skills h1 {
-    color: white;
-    position: relative;
-    font-size: calc(3vw + 2rem);
-    margin-top: 50px;
-    text-align: center;
-  }
-  .container-skills h1 span {
-    color: map-get($color-portfolio, primary);
   }
   .skills {
     display: flex;
@@ -31,37 +31,6 @@
     display: flex;
     flex-flow: column nowrap;
     gap: 20px;
-  }
-  .categories {
-    display: flex;
-    flex-flow: row wrap;
-    align-self: center;
-    gap: 5px;
-    justify-content: space-around;
-    width: 100%;
-  }
-  .categories a {
-    padding: 0px 10px 0px 10px;
-    background-color: #444444;
-    border-radius: 5px;
-    text-align: center;
-  }
-  .skill {
-    @include flex-center();
-    width: 120px;
-    height: 120px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 2px solid map-get($color-portfolio, primary);
-    font-size: 16px;
-    font-weight: 400;
-    text-align: center;
-    border-radius: 11px;
-    position: relative;
-  }
-  .skill img {
-    width: 85px;
-    height: 85px;
-    border-radius: 11px;
   }
   .description {
     @include flex-center();
@@ -77,15 +46,46 @@
     border-radius: 11px;
     cursor: default;
     user-select: none;
+    & h2 {
+      color: map-get($color-portfolio, background);
+      font-size: 16px;
+      font-weight: 900;
+    }
   }
-  .skill:active .description {
-    opacity: 1;
-    border-radius: 11px;
+  .categories {
+    display: flex;
+    flex-flow: row wrap;
+    align-self: center;
+    gap: 5px;
+    justify-content: space-around;
+    width: 100%;
+    & a {
+      padding: 0px 10px 0px 10px;
+      background-color: #444444;
+      border-radius: 5px;
+      text-align: center;
+    }
   }
-  .description h2 {
-    color: map-get($color-portfolio, background);
+  .skill {
+    @include flex-center();
+    width: 120px;
+    height: 120px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid map-get($color-portfolio, primary);
     font-size: 16px;
-    font-weight: 900;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 11px;
+    position: relative;
+    &:active .description {
+      opacity: 1;
+      border-radius: 11px;
+    }
+    & img {
+      width: 85px;
+      height: 85px;
+      border-radius: 11px;
+    }
   }
 }
 @include desktop() {
@@ -93,22 +93,42 @@
     @include flex-center();
     height: 100vh;
     flex-flow: column nowrap;
+    & h1 {
+      color: white;
+      position: relative;
+      font-size: calc(3vw + 1rem);
+      margin-top: 50px;
+      padding-bottom: 40px;
+      & span {
+        color: map-get($color-portfolio, primary);
+      }
+    }
+  }
+  .description {
+    @include flex-center();
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.655);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    text-align: center;
+    border-radius: 11px;
+    cursor: default;
+    user-select: none;
+    & h2 {
+      color: map-get($color-portfolio, background);
+      font-size: 16px;
+      font-weight: 900;
+    }
   }
   .main-skills {
     @include flex-center();
     width: 80%;
     height: 100%;
     flex-flow: column nowrap;
-  }
-  .container-skills h1 {
-    color: white;
-    position: relative;
-    font-size: calc(3vw + 1rem);
-    margin-top: 50px;
-    padding-bottom: 40px;
-  }
-  .container-skills h1 span {
-    color: map-get($color-portfolio, primary);
   }
   .skills {
     display: flex;
@@ -131,12 +151,12 @@
     gap: 5px;
     justify-content: space-around;
     width: 100%;
-  }
-  .categories a {
-    padding: 0px 10px 0px 10px;
-    background-color: #444444;
-    border-radius: 5px;
-    text-align: center;
+    & a {
+      padding: 0px 10px 0px 10px;
+      background-color: #444444;
+      border-radius: 5px;
+      text-align: center;
+    }
   }
   .skill {
     @include flex-center();
@@ -149,34 +169,14 @@
     text-align: center;
     border-radius: 11px;
     position: relative;
-  }
-  .skill img {
-    width: 85px;
-    height: 85px;
-  }
-  .description {
-    @include flex-center();
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.655);
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-    text-align: center;
-    border-radius: 11px;
-    cursor: default;
-    user-select: none;
-  }
-  .skill:hover .description {
-    opacity: 1;
-    border-radius: 11px;
-  }
-  .description h2 {
-    color: map-get($color-portfolio, background);
-    font-size: 16px;
-    font-weight: 900;
+    & img {
+      width: 85px;
+      height: 85px;
+    }
+    &:hover .description {
+      opacity: 1;
+      border-radius: 11px;
+    }
   }
 }
 /*End Skills*/
