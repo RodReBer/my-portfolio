@@ -31,10 +31,10 @@
     justify-content: center;
   }
   .nav__items__item a:hover {
-    background-color: $primary-color;
+    background-color: map-get($color-portfolio, "primary-color");
   }
   .active a {
-    background-color: $primary-color;
+    background-color: map-get($color-portfolio, "primary-color");
   }
   .nav__items__item {
     padding: 2px 0px 2px 0px;
@@ -66,7 +66,7 @@
     max-height: 70px;
     color: white;
     font-size: 30px;
-    background-color: $secondary-color;
+    background-color: map-get($color-portfolio, "secondary-color");
     border-radius: 50%;
     display: flex;
     flex-flow: column;
@@ -74,10 +74,10 @@
     justify-content: center;
   }
   .nav__items__item a:hover {
-    background-color: $primary-color;
+    background-color: map-get($color-portfolio, "primary-color");
   }
   .active a {
-    background-color: $primary-color;
+    background-color: map-get($color-portfolio, "primary-color");
   }
 }
 /*End nav*/

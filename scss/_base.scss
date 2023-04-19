@@ -9,17 +9,20 @@
   font-family: popinsregular;
   /* border: 1px solid red; */
 }
-$primary-color: #ffb300;
-$background-color: #111111;
-$secondary-color: #2b2a2a;
+$color-porfolio:(
+  primary-color: #ffb300,
+  secondary-color:#2b2a2a,
+  background-color: #111111
+
+);
 /*Start General*/
 body {
   width: 100%;
   height: 100%;
-  background-color: $background-color;
+  background-color: map-get($color-portfolio, "background-color");
 }
 html {
-  scrollbar-color: $primary-color #e0e0e013;
+  scrollbar-color: map-get($color-portfolio, "primary-color") #e0e0e013;
   scrollbar-width: thin;
 }
 a {
@@ -31,7 +34,7 @@ ul {
 }
 ::selection {
   color: white;
-  background: $primary-color;
+  background: map-get($color-portfolio, "primary-color");
 }
 span {
   color: white;
@@ -49,12 +52,12 @@ span {
   align-items: $align;
 }
 @mixin mobile() {
-  @media (max-width: 900px){
+  @media (max-width: 900px) {
     @content;
   }
 }
 @mixin desktop() {
-  @media (min-width: 901px){
+  @media (min-width: 901px) {
     @content;
   }
 }
