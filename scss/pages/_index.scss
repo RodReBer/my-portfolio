@@ -3,12 +3,12 @@
   display: flex;
   flex-flow: column nowrap;
   font-weight: bold;
-  color: map-get($color-portfolio, "primary-color");
+  color: map-get($color-portfolio, primary);
   font-size: calc(3vw + 2rem);
 }
 .presentation h1 {
   font-weight: bold;
-  color: map-get($color-portfolio, "primary-color");
+  color: map-get($color-portfolio, primary);
   font-size: calc(3vw + 2rem);
 }
 
@@ -57,14 +57,14 @@
       font-size: 40px;
       text-decoration: none;
       color: white;
-      border: 1px solid map-get($color-portfolio, "primary-color");
+      border: 1px solid map-get($color-portfolio, primary);
       border-radius: 11px;
       margin: 10px 10vw 0px 10vw;
     }
     .hire__icon {
       width: 60px;
       text-align: center;
-      background-color: map-get($color-portfolio, "primary-color");
+      background-color: map-get($color-portfolio, primary);
       border-radius: 9px;
     }
   
@@ -119,7 +119,7 @@
     .presentation h1 {
       display: flex;
       flex-flow: column nowrap;
-      color: map-get($color-portfolio, "primary-color");
+      color: map-get($color-portfolio, primary);
       font-size: calc(2vw + 1rem);
     }
     .presentation p {
@@ -136,16 +136,16 @@
       text-decoration: none;
       color: white;
       text-align: center;
-      border: 1px solid map-get($color-portfolio, "primary-color");
+      border: 1px solid map-get($color-portfolio, primary);
       border-radius: 11px;
     }
     .presentation a span {
       padding: 5px 10% 5px;
     }
     .presentation a i {
-      background-color: map-get($color-portfolio, "primary-color");
+      background-color: map-get($color-portfolio, primary);
       width: 70px;
-      border: 15px solid map-get($color-portfolio, "primary-color");
+      border: 15px solid map-get($color-portfolio, primary);
       border-radius: 10px;
       height: 100%;
     }

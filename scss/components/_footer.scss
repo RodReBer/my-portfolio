@@ -29,7 +29,7 @@
 }
 @media (min-width: 901px) {
   .footer {
-    background-color: map-get($color-portfolio, "background-color");
+    background-color: map-get($color-portfolio, background);
     width: 100%;
     display: flex;
     bottom: 0;

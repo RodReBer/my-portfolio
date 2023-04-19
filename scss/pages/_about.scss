@@ -18,7 +18,7 @@
     top: 50px;
   }
   .container-about h1 span {
-    color: map-get($color-portfolio, "primary-color");
+    color: map-get($color-portfolio, primary);
   }
   .figure-about {
     display: flex;
@@ -68,7 +68,7 @@
     text-decoration: none;
     color: white;
     text-align: center;
-    border: 1px solid map-get($color-portfolio, "primary-color");
+    border: 1px solid map-get($color-portfolio, primary);
     border-radius: 11px;
   }
   .info-about a span {
@@ -76,9 +76,9 @@
     padding: 0px 1% 0px;
   }
   .info-about a i {
-    background-color: map-get($color-portfolio, "primary-color");
+    background-color: map-get($color-portfolio, primary);
     width: 70px;
-    border: 15px solid map-get($color-portfolio, "primary-color");
+    border: 15px solid map-get($color-portfolio, primary);
     border-radius: 10px;
     height: 100%;
   }
@@ -103,7 +103,7 @@
     color: white;
   }
   .container-about .main-about .title h1 span {
-    color: map-get($color-portfolio, "primary-color");
+    color: map-get($color-portfolio, primary);
   }
   .content-about {
     height: 100%;
@@ -146,7 +146,7 @@
     text-decoration: none;
     color: white;
     text-align: center;
-    border: 1px solid map-get($color-portfolio, "primary-color");
+    border: 1px solid map-get($color-portfolio, primary);
     border-radius: 11px;
   }
   .info-about a span {
@@ -154,9 +154,9 @@
     padding: 0px 1% 0px;
   }
   .info-about a i {
-    background-color: map-get($color-portfolio, "primary-color");
+    background-color: map-get($color-portfolio, primary);
     width: 70px;
-    border: 15px solid map-get($color-portfolio, "primary-color");
+    border: 15px solid map-get($color-portfolio, primary);
     border-radius: 10px;
     height: 100%;
   }

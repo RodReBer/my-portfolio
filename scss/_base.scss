@@ -9,20 +9,19 @@
   font-family: popinsregular;
   /* border: 1px solid red; */
 }
-$color-porfolio:(
-  primary-color: #ffb300,
-  secondary-color:#2b2a2a,
-  background-color: #111111
-
+$color-portfolio: (
+  primary: #ffb300,
+  secondary: #2b2a2a,
+  background: #111111
 );
 /*Start General*/
 body {
   width: 100%;
   height: 100%;
-  background-color: map-get($color-portfolio, "background-color");
+  background-color: map-get($color-portfolio, background);
 }
 html {
-  scrollbar-color: map-get($color-portfolio, "primary-color") #e0e0e013;
+  scrollbar-color: map-get($color-portfolio, primary) #e0e0e013;
   scrollbar-width: thin;
 }
 a {
@@ -34,7 +33,7 @@ ul {
 }
 ::selection {
   color: white;
-  background: map-get($color-portfolio, "primary-color");
+  background: map-get($color-portfolio, primary);
 }
 span {
   color: white;
