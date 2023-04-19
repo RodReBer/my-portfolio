@@ -3,8 +3,6 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=rodreber&label=Profile%20views&color=0e75b6&style=flat" alt="rodreber" /> </p>
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=rodreber" alt="rodreber" /></a> </p>
-
 - 👨‍💻 All of my projects are available at [https://rodreber.github.io/my-portfolio/](https://rodreber.github.io/my-portfolio/)
 
 - 📫 How to reach me **rodrigorey2005@gmail.com**
