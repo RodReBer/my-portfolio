@@ -1,6 +1,7 @@
 @font-face {
   font-family: "popinsregular";
   src: url(../fonts/popinsregular.ttf);
+  font-display: swap;
 }
 /*Reset*/
 * {
@@ -13,7 +14,6 @@
 
 /*Start General*/
 body {
-  font-display: swap;
   width: 100%;
   height: 100%;
   background-color: #111111;
