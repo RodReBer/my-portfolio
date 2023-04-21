@@ -60,6 +60,9 @@
     border: 1px solid map-get($color-portfolio, primary);
     border-radius: 11px;
     margin: 10px 10vw 0px 10vw;
+    & span{
+      padding: 0px 0.5rem;
+    }
   }
   .hire__icon {
     width: 60px;
@@ -136,7 +139,7 @@
       border: 1px solid map-get($color-portfolio, primary);
       border-radius: 11px;
       & span {
-        padding: 5px 10% 5px;
+        padding: 5px 0.5rem 5px;
       }
       & i {
         background-color: map-get($color-portfolio, primary);

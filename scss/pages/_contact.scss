@@ -29,8 +29,7 @@
     font-size: 18px;
     width: 60vw;
     max-width: 70vw;
-    border-radius: 20px;
-    background-color: map-get($color-portfolio, secondary);
+    border-radius: 20px 20px 0px 20px;    background-color: map-get($color-portfolio, secondary);
     resize: vertical;
     max-height: 400px;
     min-height: 100px;
@@ -144,8 +143,7 @@
           font-size: 18px;
           width: 60vw;
           max-width: 70vw;
-          border-radius: 20px;
-          background-color: map-get($color-portfolio, secondary);
+          border-radius: 20px 20px 0px 20px;          background-color: map-get($color-portfolio, secondary);
           resize: vertical;
           max-height: 360px;
           min-height: 100px;
@@ -218,10 +216,11 @@
     }
   }
 }
-@media (max-width: 440px) {
+@media (max-width: 489px) {
   .buttonmsg i {
     height: 76px;
     width: 76px;
+    border: none;
   }
 }
 /*End Contact*/

@@ -47,6 +47,44 @@ span {
 }
 
 /*End General*/
+.button {
+  display: inline-block;
+  padding-left: 0rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.15rem;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.button:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border-radius: 10rem;
+  z-index: 1;
+}
+.button:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #ffb300;
+  transition: all 0.8s;
+  z-index: -1;
+}
+.button:hover:before {
+  width: 100%;
+}
+
 /*Start About*/
 @media (max-width: 900px) {
   .container-about {
@@ -263,7 +301,7 @@ span {
     font-size: 18px;
     width: 60vw;
     max-width: 70vw;
-    border-radius: 20px;
+    border-radius: 20px 20px 0px 20px;
     background-color: #2b2a2a;
     resize: vertical;
     max-height: 400px;
@@ -387,7 +425,7 @@ span {
     font-size: 18px;
     width: 60vw;
     max-width: 70vw;
-    border-radius: 20px;
+    border-radius: 20px 20px 0px 20px;
     background-color: #2b2a2a;
     resize: vertical;
     max-height: 360px;
@@ -462,10 +500,11 @@ span {
     padding-left: 5px;
   }
 }
-@media (max-width: 440px) {
+@media (max-width: 489px) {
   .buttonmsg i {
     height: 76px;
     width: 76px;
+    border: none;
   }
 }
 /*End Contact*/
@@ -824,6 +863,9 @@ span {
     border-radius: 11px;
     margin: 10px 10vw 0px 10vw;
   }
+  .presentation a span {
+    padding: 0px 0.5rem;
+  }
   .hire__icon {
     width: 60px;
     text-align: center;
@@ -907,7 +949,7 @@ span {
     border-radius: 11px;
   }
   .presentation a span {
-    padding: 5px 10% 5px;
+    padding: 5px 0.5rem 5px;
   }
   .presentation a i {
     background-color: #ffb300;
@@ -988,7 +1030,7 @@ span {
     width: 100%;
     justify-content: center;
     background-color: rgba(43, 42, 42, 0.6784313725);
-    z-index: 1;
+    z-index: 2;
   }
   .container-index__header .nav {
     display: flex;
