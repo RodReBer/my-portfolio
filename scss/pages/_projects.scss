@@ -49,6 +49,9 @@
         transition: opacity 0.3s ease-in-out;
         text-align: center;
         border-radius: 11px;
+        & h2{
+          color: black;
+        }
       }
     }
     &__project:hover .description {

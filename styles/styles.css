@@ -581,6 +581,9 @@ span {
   text-align: center;
   border-radius: 11px;
 }
+.main-project .projects__project .description h2 {
+  color: black;
+}
 .main-project .projects__project:hover .description {
   opacity: 1;
   border-radius: 11px;
