@@ -13,14 +13,6 @@
 }
 
 @include mobile() {
-  body {
-    overflow: scroll;
-  }
-  .contenedor {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-  }
   .container-index {
     display: flex;
     height: 100vh;
@@ -30,45 +22,52 @@
       display: flex;
       flex-flow: column nowrap;
       align-items: center;
+      & .contenedor {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        & .figure-home {
+          display: flex;
+          justify-content: center;
+          & img {
+            min-width: 100px;
+            width: 100%;
+            height: auto;
+          }
+        }
+        & .presentation {
+          & h1 {
+            text-align: center;
+          }
+          & p {
+            font-size: 20px;
+            padding: 0px 10vw 0px 10vw;
+            color: white;
+            text-align: justify;
+          }
+          & a {
+            @include flex-box(space-between, center);
+            flex-flow: row nowrap;
+            font-size: 40px;
+            text-decoration: none;
+            color: white;
+            border: 1px solid map-get($color-portfolio, primary);
+            border-radius: 11px;
+            margin: 10px 10vw 0px 10vw;
+            & span {
+              padding: 0px 0.5rem;
+            }
+          }
+          & .hire__icon {
+            height: 100%;
+            width: 60px;
+            text-align: center;
+            background-color: map-get($color-portfolio, primary);
+            border-radius: 9px;
+          }
+        }
+      }
     }
-  }
-  /*presentation*/
-  .presentation h1 {
-    text-align: center;
-  }
-  .presentation p {
-    font-size: 20px;
-    padding: 0px 10vw 0px 10vw;
-    color: white;
-    text-align: justify;
-  }
-  .figure-home {
-    display: flex;
-    justify-content: center;
-    & img {
-      min-width: 100px;
-      width: 100%;
-      height: auto;
-    }
-  }
-  .presentation a {
-    @include flex-box(space-between, center);
-    flex-flow: row nowrap;
-    font-size: 40px;
-    text-decoration: none;
-    color: white;
-    border: 1px solid map-get($color-portfolio, primary);
-    border-radius: 11px;
-    margin: 10px 10vw 0px 10vw;
-    & span{
-      padding: 0px 0.5rem;
-    }
-  }
-  .hire__icon {
-    width: 60px;
-    text-align: center;
-    background-color: map-get($color-portfolio, primary);
-    border-radius: 9px;
   }
 }
 @include desktop() {
@@ -94,61 +93,67 @@
         width: 100%;
         flex-flow: row nowrap;
         gap: 5%;
-      }
-      & .figure-home {
-        display: flex;
-        align-items: center;
-        height: 100%;
-        width: 600px;
-        & img {
-          min-width: 400px;
+        & .presentation {
+          max-width: 500px;
           width: 100%;
           height: auto;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          margin-right: 90px;
+          & h1 {
+            display: flex;
+            flex-flow: column nowrap;
+            color: map-get($color-portfolio, primary);
+            font-size: calc(2vw + 1rem);
+          }
+          & p {
+            max-width: 520px;
+            line-height: 25px;
+            font-size: 20px;
+            color: white;
+            text-align: justify;
+          }
+          & a {
+            @include flex-box(space-between, center);
+            flex-flow: row nowrap;
+            font-size: 40px;
+            text-decoration: none;
+            color: white;
+            text-align: center;
+            border: 1px solid map-get($color-portfolio, primary);
+            border-radius: 11px;
+            & span {
+              padding: 5px 0.5rem 5px;
+            }
+            & i {
+              background-color: map-get($color-portfolio, primary);
+              width: 70px;
+              border: 15px solid map-get($color-portfolio, primary);
+              border-radius: 10px;
+              height: 100%;
+            }
+          }
+        }
+        & .figure-home {
+          display: flex;
+          align-items: center;
+          height: 100%;
+          width: 600px;
+          & img {
+            min-width: 400px;
+            width: 100%;
+            height: auto;
+          }
         }
       }
     }
   }
-  .presentation {
-    max-width: 500px;
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin-right: 90px;
-    & h1 {
-      display: flex;
-      flex-flow: column nowrap;
-      color: map-get($color-portfolio, primary);
-      font-size: calc(2vw + 1rem);
-    }
-    & p {
-      max-width: 520px;
-      line-height: 25px;
-      font-size: 20px;
-      color: white;
-      text-align: justify;
-    }
-    & a {
-      @include flex-box(space-between, center);
-      flex-flow: row nowrap;
-      font-size: 40px;
-      text-decoration: none;
-      color: white;
-      text-align: center;
-      border: 1px solid map-get($color-portfolio, primary);
-      border-radius: 11px;
-      & span {
-        padding: 5px 0.5rem 5px;
-      }
-      & i {
-        background-color: map-get($color-portfolio, primary);
-        width: 70px;
-        border: 15px solid map-get($color-portfolio, primary);
-        border-radius: 10px;
-        height: 100%;
-      }
-    }
+}
+@media (max-width: 303px) {
+  .button .hire__icon {
+    height: 122px !important;
+    @include flex-center;
   }
 }
 /*end index*/
