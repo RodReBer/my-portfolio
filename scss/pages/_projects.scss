@@ -29,7 +29,6 @@
       background-color: rgba(255, 255, 255, 0.1);
       border: 2px solid map-get($color-portfolio, primary);
       font-size: 16px;
-      font-weight: 400;
       text-align: center;
       border-radius: 11px;
       position: relative;
@@ -49,8 +48,10 @@
         transition: opacity 0.3s ease-in-out;
         text-align: center;
         border-radius: 11px;
-        & h2{
+        & h2 {
           color: black;
+          font-size: 16px;
+          font-weight: 900;
         }
       }
     }
