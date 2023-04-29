@@ -16,7 +16,7 @@
 body {
   width: 100%;
   height: 100%;
-  background-color: #111111;
+  background-color: #454545;
 }
 
 html {
@@ -361,7 +361,7 @@ span {
     justify-content: space-between;
     align-items: center;
     width: 60vw;
-    background-color: #111111;
+    background-color: #454545;
     flex-flow: row nowrap;
     font-size: 25px;
     text-decoration: none;
@@ -492,7 +492,7 @@ span {
     justify-content: space-between;
     align-items: center;
     width: 50%;
-    background-color: #111111;
+    background-color: #454545;
     flex-flow: row nowrap;
     font-size: 25px;
     color: white;
@@ -532,7 +532,7 @@ span {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #111111;
+  background-color: #454545;
   height: 100%;
   flex-flow: column nowrap;
 }
@@ -687,7 +687,7 @@ span {
     user-select: none;
   }
   .container-skills .main-skills .content-skills .skills .skill .description h2 {
-    color: #111111;
+    color: #454545;
     font-size: 16px;
     font-weight: 900;
   }
@@ -800,7 +800,7 @@ span {
     user-select: none;
   }
   .container-skills .main-skills .content-skills .skills .skill .description h2 {
-    color: #111111;
+    color: #454545;
     font-size: 16px;
     font-weight: 900;
   }
@@ -1009,7 +1009,7 @@ span {
 }
 @media (min-width: 901px) {
   .footer {
-    background-color: #111111;
+    background-color: #454545;
     width: 100%;
     display: flex;
     bottom: 0;

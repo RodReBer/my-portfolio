@@ -12,12 +12,18 @@
   /* border: 1px solid red; */
 }
 $color-portfolio: (
-  primary: #ffb300,
+  // first option
+   primary: #ffb300,
+  //  background: #111111,
+   secondary: #2b2a2a,
+  //Second option
   // primary: #00a6fb,
-
-  secondary: #2b2a2a,
-  background: #111111,
-  // background: #454545,
+   background: #454545,
+  // secondary: #2b2a2a,
+  //test color
+  // primary: #410585,
+  // background: #111111,
+  // secondary: #2b2a2a
 );
 /*Start General*/
 body {
