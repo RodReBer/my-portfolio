@@ -20,7 +20,7 @@ body {
 }
 
 html {
-  scrollbar-color: #ffb300 rgba(224, 224, 224, 0.0745098039);
+  scrollbar-color: #00a6fb rgba(224, 224, 224, 0.0745098039);
   scrollbar-width: thin;
 }
 
@@ -35,7 +35,7 @@ ul {
 
 ::selection {
   color: white;
-  background: #ffb300;
+  background: #00a6fb;
 }
 
 span {
@@ -51,9 +51,7 @@ span {
   display: inline-block;
   padding-left: 0rem;
   color: #fff;
-  text-transform: uppercase;
   font-size: 1rem;
-  letter-spacing: 0.15rem;
   transition: all 0.3s;
   position: relative;
   overflow: hidden;
@@ -77,7 +75,7 @@ span {
   right: 0;
   width: 0%;
   height: 100%;
-  background-color: #ffb300;
+  background-color: #00a6fb;
   transition: all 0.8s;
   z-index: -1;
 }
@@ -105,7 +103,7 @@ span {
     top: 50px;
   }
   .container-about .main-about h1 span {
-    color: #ffb300;
+    color: #00a6fb;
   }
   .container-about .main-about .figure-about {
     display: flex;
@@ -131,7 +129,7 @@ span {
     text-decoration: none;
     color: white;
     text-align: center;
-    border: 1px solid #ffb300;
+    border: 1px solid #00a6fb;
     border-radius: 11px;
   }
   .container-about .main-about .info-about a span {
@@ -139,9 +137,9 @@ span {
     padding: 0px 1% 0px;
   }
   .container-about .main-about .info-about a i {
-    background-color: #ffb300;
+    background-color: #00a6fb;
     width: 70px;
-    border: 10px solid #ffb300;
+    border: 10px solid #00a6fb;
     border-radius: 10px;
     height: 100%;
     min-height: 50px;
@@ -186,7 +184,7 @@ span {
     color: white;
   }
   .container-about .main-about .title h1 span {
-    color: #ffb300;
+    color: #00a6fb;
   }
   .main-about {
     display: flex;
@@ -242,7 +240,7 @@ span {
     text-decoration: none;
     color: white;
     text-align: center;
-    border: 1px solid #ffb300;
+    border: 1px solid #00a6fb;
     border-radius: 11px;
   }
   .info-about a span {
@@ -250,9 +248,9 @@ span {
     padding: 0px 1% 0px;
   }
   .info-about a i {
-    background-color: #ffb300;
+    background-color: #00a6fb;
     width: 70px;
-    border: 15px solid #ffb300;
+    border: 15px solid #00a6fb;
     border-radius: 10px;
     height: 100%;
   }
@@ -298,7 +296,7 @@ span {
     text-align: center;
   }
   .container-contact h1 span {
-    color: #ffb300;
+    color: #00a6fb;
   }
   .container-contact .contact-container {
     display: flex;
@@ -330,7 +328,7 @@ span {
   }
   .container-contact .contact-container .form-contact .info-contact input:focus {
     outline: none;
-    border: 1px solid #ffb300;
+    border: 1px solid #00a6fb;
   }
   .container-contact .contact-container .form-contact .message-contact textarea {
     padding-top: 10px;
@@ -348,7 +346,7 @@ span {
   }
   .container-contact .contact-container .form-contact .message-contact textarea:focus {
     outline: none;
-    border: 1px solid #ffb300;
+    border: 1px solid #00a6fb;
   }
   .container-contact .contact-container .form-contact .button-contact {
     height: auto;
@@ -367,7 +365,7 @@ span {
     text-decoration: none;
     color: white;
     text-align: center;
-    border: 1px solid #ffb300;
+    border: 1px solid #00a6fb;
     border-radius: 11px;
     gap: 10px;
     height: auto;
@@ -376,10 +374,10 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ffb300;
+    background-color: #00a6fb;
     width: 65px;
     height: 100%;
-    border: 30px solid #ffb300;
+    border: 30px solid #00a6fb;
     border-radius: 10px;
     min-height: 65px;
     max-height: 78px;
@@ -416,7 +414,7 @@ span {
     text-align: center;
   }
   .container-contact h1 span {
-    color: #ffb300;
+    color: #00a6fb;
   }
   .container-contact .contact-container {
     display: flex;
@@ -449,7 +447,7 @@ span {
   }
   .container-contact .contact-container .form-contact .message-contact textarea:focus {
     outline: none;
-    border: 1px solid #ffb300;
+    border: 1px solid #00a6fb;
   }
   .container-contact .contact-container .form-contact .info-contact {
     width: 60vw;
@@ -468,7 +466,7 @@ span {
   }
   .container-contact .contact-container .form-contact .info-contact input:focus {
     outline: none;
-    border: 1px solid #ffb300;
+    border: 1px solid #00a6fb;
   }
   .container-contact .contact-container .form-contact .message-contact {
     width: 60vw;
@@ -497,7 +495,7 @@ span {
     font-size: 25px;
     color: white;
     text-align: center;
-    border: 1px solid #ffb300;
+    border: 1px solid #00a6fb;
     border-radius: 11px;
   }
   .container-contact .contact-container .form-contact .button-contact .buttonmsg:hover {
@@ -507,10 +505,10 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ffb300;
+    background-color: #00a6fb;
     width: 60px;
     height: 100%;
-    border: 20px solid #ffb300;
+    border: 20px solid #00a6fb;
     border-radius: 10px;
     min-height: 65px;
     max-height: 75px;
@@ -544,7 +542,7 @@ span {
   padding-bottom: 30px;
 }
 .main-project .title-projects h1 span {
-  color: #ffb300;
+  color: #00a6fb;
 }
 .main-project .projects {
   display: flex;
@@ -563,7 +561,7 @@ span {
   width: 300px;
   height: 200px;
   background-color: rgba(255, 255, 255, 0.1);
-  border: 2px solid #ffb300;
+  border: 2px solid #00a6fb;
   font-size: 16px;
   text-align: center;
   border-radius: 11px;
@@ -592,6 +590,28 @@ span {
   color: black;
   font-size: 16px;
   font-weight: 900;
+}
+.main-project .projects__project .btn-info {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+}
+.main-project .projects__project .modal {
+  background-color: rgba(128, 128, 128, 0.361);
+}
+.main-project .projects__project .modal-content {
+  background-color: #454545;
+  border: 2px solid #00a6fb;
+}
+.main-project .projects__project .modal-content .modal-title {
+  color: black;
+}
+.main-project .projects__project .modal-content .close {
+  color: red;
+}
+.main-project .projects__project .modal-content .modal-body figure img {
+  color: black;
 }
 .main-project .projects__project:hover .description {
   opacity: 1;
@@ -625,7 +645,7 @@ span {
     text-align: center;
   }
   .container-skills h1 span {
-    color: #ffb300;
+    color: #00a6fb;
   }
   .container-skills .main-skills {
     display: flex;
@@ -653,7 +673,7 @@ span {
     width: 120px;
     height: 120px;
     background-color: rgba(255, 255, 255, 0.1);
-    border: 2px solid #ffb300;
+    border: 2px solid #00a6fb;
     font-size: 16px;
     font-weight: 400;
     text-align: center;
@@ -722,7 +742,7 @@ span {
     padding-bottom: 40px;
   }
   .container-skills h1 span {
-    color: #ffb300;
+    color: #00a6fb;
   }
   .container-skills .main-skills {
     display: flex;
@@ -767,7 +787,7 @@ span {
     width: 150px;
     height: 150px;
     background-color: rgba(255, 255, 255, 0.1);
-    border: 2px solid #ffb300;
+    border: 2px solid #00a6fb;
     font-size: 16px;
     font-weight: 400;
     text-align: center;
@@ -811,13 +831,13 @@ span {
   display: flex;
   flex-flow: column nowrap;
   font-weight: bold;
-  color: #ffb300;
+  color: #00a6fb;
   font-size: calc(3vw + 2rem);
 }
 
 .presentation h1 {
   font-weight: bold;
-  color: #ffb300;
+  color: #00a6fb;
   font-size: calc(3vw + 2rem);
 }
 
@@ -864,7 +884,7 @@ span {
     font-size: 40px;
     text-decoration: none;
     color: white;
-    border: 1px solid #ffb300;
+    border: 1px solid #00a6fb;
     border-radius: 11px;
     margin: 10px 10vw 0px 10vw;
   }
@@ -875,7 +895,7 @@ span {
     height: 100%;
     width: 60px;
     text-align: center;
-    background-color: #ffb300;
+    background-color: #00a6fb;
     border-radius: 9px;
   }
 }
@@ -920,7 +940,7 @@ span {
   .container-index__main .contenedor .presentation h1 {
     display: flex;
     flex-flow: column nowrap;
-    color: #ffb300;
+    color: #00a6fb;
     font-size: calc(2vw + 1rem);
   }
   .container-index__main .contenedor .presentation p {
@@ -939,7 +959,7 @@ span {
     text-decoration: none;
     color: white;
     text-align: center;
-    border: 1px solid #ffb300;
+    border: 1px solid #00a6fb;
     border-radius: 11px;
   }
   .container-index__main .contenedor .presentation a:hover {
@@ -951,9 +971,9 @@ span {
     padding: 5px 0.5rem 5px;
   }
   .container-index__main .contenedor .presentation a i {
-    background-color: #ffb300;
+    background-color: #00a6fb;
     width: 70px;
-    border: 15px solid #ffb300;
+    border: 15px solid #00a6fb;
     border-radius: 10px;
     height: 100%;
   }
@@ -1038,7 +1058,7 @@ span {
     font-size: 40px;
   }
   .footer__item a:hover {
-    color: #ffb300;
+    color: #00a6fb;
   }
 }
 /*End footer*/
@@ -1068,7 +1088,7 @@ span {
     list-style: none;
   }
   .container-index__header .nav__items .active a {
-    background-color: #ffb300;
+    background-color: #00a6fb;
   }
   .container-index__header .nav__items li {
     width: 100%;
@@ -1095,7 +1115,7 @@ span {
     justify-content: center;
   }
   .container-index__header .nav__items__item a:hover {
-    background-color: #ffb300;
+    background-color: #00a6fb;
   }
 }
 @media (min-width: 901px) {
@@ -1108,7 +1128,7 @@ span {
     list-style: none;
   }
   .nav__items .active a {
-    background-color: #ffb300;
+    background-color: #00a6fb;
     box-shadow: 10px 0px 13px -6px rgb(0, 0, 0);
     -webkit-box-shadow: 10px 0px 13px -6px rgb(0, 0, 0);
     -moz-box-shadow: 10px 0px 13px -6px rgb(0, 0, 0);
@@ -1140,7 +1160,7 @@ span {
     -moz-box-shadow: 10px 0px 13px -6px rgb(0, 0, 0) inset;
   }
   .nav__items__item a:hover {
-    background-color: #ffb300;
+    background-color: #00a6fb;
     box-shadow: 10px 0px 13px -6px rgb(0, 0, 0);
     -webkit-box-shadow: 10px 0px 13px -6px rgb(0, 0, 0);
     -moz-box-shadow: 10px 0px 13px -6px rgb(0, 0, 0);

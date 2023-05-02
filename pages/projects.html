@@ -22,7 +22,12 @@
     <meta name="category" content="SaaS" />
     <!-- <meta itemprop="telephone" content="+59899999999" /> -->
     <!-- End Meta descriptions - SEO -->
-
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <!-- Google tag (gtag.js) -->
     <script
       defer
@@ -99,32 +104,162 @@
           <h1>MY <span>PROJECTS</span></h1>
         </div>
         <div class="projects">
+          <!--Reina-->
           <div class="projects__project">
-          </div>
-          <div class="projects__project">
-            <a href="#">
+            <!-- Trigger the modal with a button -->
+            <button
+              type="button"
+              class="btn btn-info btn-lg"
+              data-toggle="modal"
+              data-target="#myModalRR"
+            >
               <img src="../img/reina-reyes.webp" alt="reina reyes" />
               <div class="description">
-                <h2>Colegio y Liceo Reina Reyes</h2>
+                <h2>
+                  College and high school <br />
+                  Reina Reyes
+                </h2>
               </div>
-            </a>
-          </div>
-          <div class="projects__project">
-            <a href="">
-              <img src="../img/dron.webp" alt="css" />
-              <div class="description">
-                <h2>Gesti&oacute;n de inventarios</h2>
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModalRR" role="dialog">
+              <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                      &times;
+                    </button>
+                    <h3 class="modal-title">
+                      College and high school Reina Reyes
+                    </h3>
+                  </div>
+                  <div class="modal-body">
+                    <figure>
+                      <img
+                        src=""
+                        alt="College and high school  
+                      Reina Reyes project"
+                      />
+                    </figure>
+                    <div class="content-modal-body"></div>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-default"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <a href="" class="btn btn-default">
+                      GitHub
+                    </a>
+                  </div>
+                </div>
               </div>
-            </a>
+            </div>
           </div>
+
+          <!--Portfolio-->
           <div class="projects__project">
-            <a href="">
+            <!-- Trigger the modal with a button -->
+            <button
+              type="button"
+              class="btn btn-info btn-lg"
+              data-toggle="modal"
+              data-target="#myModalPortfolio"
+            >
               <img src="../img/logo.webp" alt="My portfolio" />
               <div class="description">
                 <h2>My portfolio</h2>
               </div>
-            </a>
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModalPortfolio" role="dialog">
+              <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                      &times;
+                    </button>
+                    <h3 class="modal-title">My portfolio</h3>
+                  </div>
+                  <div class="modal-body">
+                    <figure>
+                      <img src="" alt="Portfolio project" />
+                    </figure>
+                    <div class="content-modal-body"></div>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-default"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <a href="https://github.com/RodReBer/my-portfolio" class="btn btn-default">
+                      GitHub
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+
+          <!--Gestion de inventarios-->
+          <div class="projects__project">
+            <!-- Trigger the modal with a button -->
+            <button
+              type="button"
+              class="btn btn-info btn-lg"
+              data-toggle="modal"
+              data-target="#myModalGDI"
+            >
+              <img src="../img/dron.webp" alt="css" />
+              <div class="description">
+                <h2>Inventory management</h2>
+              </div>
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModalGDI" role="dialog">
+              <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                      &times;
+                    </button>
+                    <h3 class="modal-title">Inventory management</h3>
+                  </div>
+                  <div class="modal-body">
+                    <figure>
+                      <img src="" alt="inventory management project" />
+                    </figure>
+                    <div class="content-modal-body"></div>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-default"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <a href="https://github.com/RodReBer/Inventory-management" class="btn btn-default">
+                      GitHub
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div class="projects__project">
             <a href="">
               <img src="../img/react.webp" alt="react" />

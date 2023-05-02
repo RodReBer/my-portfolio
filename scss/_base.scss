@@ -13,13 +13,13 @@
 }
 $color-portfolio: (
   // first option
-   primary: #ffb300,
+  //  primary: #ffb300,
   //  background: #111111,
-   secondary: #2b2a2a,
+  //  secondary: #2b2a2a,
   //Second option
-  // primary: #00a6fb,
-   background: #454545,
-  // secondary: #2b2a2a,
+  primary: #00a6fb,
+  background: #454545,
+  secondary: #2b2a2a,
   //test color
   // primary: #410585,
   // background: #111111,
@@ -78,9 +78,7 @@ span {
   display: inline-block;
   padding-left: 0rem;
   color: #fff;
-  text-transform: uppercase;
   font-size: 1rem;
-  letter-spacing: 0.15rem;
   transition: all 0.3s;
   position: relative;
   overflow: hidden;
