@@ -2,7 +2,6 @@
 
 .main-project {
   @include flex-box(space-between, center);
-  background-color: map-get($color-portfolio, background);
   height: 100%;
   flex-flow: column nowrap;
   & .title-projects h1 {

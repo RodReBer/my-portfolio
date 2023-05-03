@@ -536,7 +536,6 @@ span {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #454545;
   height: 100%;
   flex-flow: column nowrap;
 }
