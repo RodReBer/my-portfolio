@@ -71,7 +71,7 @@
           & .buttonmsg {
             @include flex-box(space-between, center);
             width: 60vw;
-            background-color: map-get($color-portfolio, background);
+            background-color: transparent;
             flex-flow: row nowrap;
             font-size: 25px;
             text-decoration: none;
@@ -197,7 +197,7 @@
           & .buttonmsg {
             @include flex-box(space-between, center);
             width: 50%;
-            background-color: map-get($color-portfolio, background);
+            background-color: transparent;
             flex-flow: row nowrap;
             font-size: 25px;
             color: white;
