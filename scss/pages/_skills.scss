@@ -63,7 +63,7 @@
               cursor: default;
               user-select: none;
               & h2 {
-                color: map-get($color-portfolio, background);
+                color: black;
                 font-size: 16px;
                 font-weight: 900;
               }
@@ -168,7 +168,7 @@
               cursor: default;
               user-select: none;
               & h2 {
-                color: map-get($color-portfolio, background);
+                color: black;
                 font-size: 16px;
                 font-weight: 900;
               }

@@ -19,7 +19,7 @@ $color-portfolio: (
   //  secondary: #2b2a2a,
   //Second option
   primary: #00a6fb,
-  background: #454545,
+  background: #45454500,
   secondary: #2b2a2a,
   //test color
   // primary: #410585,
@@ -31,10 +31,15 @@ body {
   width: 100%;
   height: 100%;
   background-color: map-get($color-portfolio, background);
+  background-image: url(../img/bg2.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(30px);
 }
 html {
   scrollbar-color: map-get($color-portfolio, primary) #e0e0e013;
   scrollbar-width: thin;
+  height: 100%;
 }
 a {
   text-decoration: none;

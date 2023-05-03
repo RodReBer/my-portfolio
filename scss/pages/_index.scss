@@ -18,6 +18,7 @@
     height: 100vh;
     flex-flow: column nowrap;
     justify-content: space-between;
+    
     &__main {
       display: flex;
       flex-flow: column nowrap;
@@ -30,7 +31,7 @@
           display: flex;
           justify-content: center;
           & img {
-            min-width: 100px;
+            min-width: 300px;
             width: 100%;
             height: auto;
           }

@@ -14,6 +14,7 @@
         position: relative;
         font-size: calc(3vw + 2rem);
         top: 50px;
+        margin-bottom: 30px;
         & span {
           color: map-get($color-portfolio, primary);
         }
