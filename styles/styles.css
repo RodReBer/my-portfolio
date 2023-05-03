@@ -542,7 +542,7 @@ span {
 .main-project .title-projects h1 {
   color: white;
   position: relative;
-  font-size: calc(3vw + 1rem);
+  font-size: calc(3vw + 2rem);
   margin-top: 20px;
   padding-bottom: 30px;
 }
