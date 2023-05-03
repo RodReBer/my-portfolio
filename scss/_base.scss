@@ -29,17 +29,17 @@ $color-portfolio: (
 /*Start General*/
 body {
   width: 100%;
-  height: 100%;
+  height: 100% !important;
   background-color: map-get($color-portfolio, background);
-  background-image: url(../img/bg2.svg);
-  background-repeat: no-repeat;
+  background-image: url(../img/bg3.svg) ;
+  background-repeat: no-repeat ;
   background-size: cover;
   backdrop-filter: blur(30px);
+  background-attachment: fixed;
 }
 html {
   scrollbar-color: map-get($color-portfolio, primary) #e0e0e013;
   scrollbar-width: thin;
-  height: 100%;
 }
 a {
   text-decoration: none;
