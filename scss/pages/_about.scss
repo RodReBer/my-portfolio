@@ -2,7 +2,7 @@
 @include mobile() {
   .container-about {
     display: flex;
-    height: 100vh;
+    height: 100%;
     flex-flow: column nowrap;
     align-items: center;
     & .main-about {

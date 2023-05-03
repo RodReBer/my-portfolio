@@ -2,7 +2,7 @@
 @include mobile() {
   .container-contact {
     @include flex-box(space-between, center);
-    height: 100vh;
+    height: 100%;
     flex-flow: column nowrap;
     & h1 {
       color: white;

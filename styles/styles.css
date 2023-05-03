@@ -92,7 +92,7 @@ span {
 @media (max-width: 900px) {
   .container-about {
     display: flex;
-    height: 100vh;
+    height: 100%;
     flex-flow: column nowrap;
     align-items: center;
   }
@@ -290,7 +290,7 @@ span {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100vh;
+    height: 100%;
     flex-flow: column nowrap;
   }
   .container-contact h1 {
