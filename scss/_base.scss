@@ -29,14 +29,13 @@ $color-portfolio: (
 /*Start General*/
 body {
   width: 100%;
-  height: 100% !important;
+  height: 100%;
   background-color: map-get($color-portfolio, background);
   background-image: url(../img/bg3.svg) ;
   background-repeat: no-repeat ;
   background-size: cover;
   backdrop-filter: blur(30px);
   background-attachment: fixed;
-  padding-bottom: 26px;
 }
 html {
   scrollbar-color: map-get($color-portfolio, primary) #e0e0e013;
