@@ -22,6 +22,7 @@ body {
   background-size: cover;
   backdrop-filter: blur(30px);
   background-attachment: fixed;
+  padding-bottom: 26px;
 }
 
 html {
