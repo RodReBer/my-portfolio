@@ -18,7 +18,8 @@
     height: 100%;
     flex-flow: column nowrap;
     justify-content: space-between;
-    
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
     &__main {
       display: flex;
       flex-flow: column nowrap;
@@ -76,6 +77,8 @@
     display: flex;
     height: 100vh;
     flex-flow: column nowrap;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
     &__header {
       height: 100%;
       display: flex;
@@ -83,13 +86,6 @@
       right: 0;
       align-items: center;
       padding-right: 20px;
-      // background: rgb(69, 69, 64);
-      // background: linear-gradient(
-      //   90deg,
-      //   rgba(69, 69, 64, 0) 0%,
-      //   rgba(69, 69, 69, 1) 30%,
-      //   rgba(38, 38, 38, 1) 100%
-      // );
     }
     &__main {
       @include flex-box(space-evenly, center);

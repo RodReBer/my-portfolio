@@ -1,9 +1,14 @@
 /*----------Start Skills----------*/
-@include mobile() {
+.container-skills {
+  height: auto;
+}
+@media (max-width: 900px) {
   .container-skills {
-    @include flex-box(space-between, center);
-    height: 100%;
+    @include flex-center();
     flex-flow: column nowrap;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    justify-content: space-between;
     & h1 {
       color: white;
       position: relative;
@@ -88,11 +93,24 @@
     }
   }
 }
-@include desktop() {
+@media (min-width: 850px) and (max-width: 900px) {
+  .container-skills {
+    height: 100%;
+  }
+}
+@media (min-width: 900px) and (max-width: 922px) {
+  .bodySkills .container-skills {
+    height: auto;
+    padding-bottom: 75px;
+  }
+}
+@media (min-width: 901px) {
   .container-skills {
     @include flex-center();
     height: 100vh;
     flex-flow: column nowrap;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
     & h1 {
       color: white;
       position: relative;

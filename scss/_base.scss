@@ -29,13 +29,17 @@ $color-portfolio: (
 /*Start General*/
 body {
   width: 100%;
+  height: 100%;
   // background-color: map-get($color-portfolio, background);
-  background-image: url(../img/bg3.svg) ;
-  background-repeat: no-repeat ;
+  background-image: url(../img/bg3.svg);
+  background-repeat: no-repeat;
   background-size: cover;
-  backdrop-filter: blur(30px);
   background-attachment: fixed;
-  -webkit-backdrop-filter:blur(30px);
+}
+@media (max-width: 500px) {
+  .aboutSkills {
+    height: auto;
+  }
 }
 html {
   scrollbar-color: map-get($color-portfolio, primary) #e0e0e013;

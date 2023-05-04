@@ -15,14 +15,18 @@
 /*Start General*/
 body {
   width: 100%;
+  height: 100%;
   background-image: url(../img/bg3.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  backdrop-filter: blur(30px);
   background-attachment: fixed;
-  -webkit-backdrop-filter: blur(30px);
 }
 
+@media (max-width: 500px) {
+  .aboutSkills {
+    height: auto;
+  }
+}
 html {
   scrollbar-color: #00a6fb rgba(224, 224, 224, 0.0745098039);
   scrollbar-width: thin;
@@ -98,6 +102,9 @@ span {
     height: 100%;
     flex-flow: column nowrap;
     align-items: center;
+    justify-content: space-between;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
   }
   .container-about .main-about {
     display: flex;
@@ -184,6 +191,8 @@ span {
     align-items: center;
     height: 100vh;
     flex-flow: column nowrap;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
   }
   .container-about h1 {
     padding-top: 20px;
@@ -289,12 +298,17 @@ span {
 /*End About*/
 /*Start Contact*/
 @media (max-width: 900px) {
+  .bodyBackground {
+    height: auto;
+  }
   .container-contact {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100%;
     flex-flow: column nowrap;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
   }
   .container-contact h1 {
     color: white;
@@ -413,6 +427,8 @@ span {
     align-items: center;
     height: 100vh;
     flex-flow: column nowrap;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
   }
   .container-contact h1 {
     color: white;
@@ -539,7 +555,6 @@ span {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100%;
   flex-flow: column nowrap;
 }
 .main-project .title-projects h1 {
@@ -626,6 +641,14 @@ span {
   border-radius: 11px;
 }
 
+.container-project {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+}
+
 @media (max-width: 900px) {
   .title-projects h1 {
     font-size: calc(3vw + 1.5rem);
@@ -635,15 +658,26 @@ span {
     height: 150px;
   }
 }
+@media (min-width: 1170px) {
+  .container-project {
+    height: 100vh;
+  }
+}
 /*----------End Projects----------*/
 /*----------Start Skills----------*/
+.container-skills {
+  height: auto;
+}
+
 @media (max-width: 900px) {
   .container-skills {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    height: 100%;
     flex-flow: column nowrap;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    justify-content: space-between;
   }
   .container-skills h1 {
     color: white;
@@ -734,6 +768,17 @@ span {
     text-align: center;
   }
 }
+@media (min-width: 850px) and (max-width: 900px) {
+  .container-skills {
+    height: 100%;
+  }
+}
+@media (min-width: 900px) and (max-width: 922px) {
+  .bodySkills .container-skills {
+    height: auto;
+    padding-bottom: 75px;
+  }
+}
 @media (min-width: 901px) {
   .container-skills {
     display: flex;
@@ -741,6 +786,8 @@ span {
     align-items: center;
     height: 100vh;
     flex-flow: column nowrap;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
   }
   .container-skills h1 {
     color: white;
@@ -855,6 +902,8 @@ span {
     height: 100%;
     flex-flow: column nowrap;
     justify-content: space-between;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
   }
   .container-index__main {
     display: flex;
@@ -912,6 +961,8 @@ span {
     display: flex;
     height: 100vh;
     flex-flow: column nowrap;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
   }
   .container-index__header {
     height: 100%;
@@ -1038,6 +1089,7 @@ span {
   .footer {
     width: 100%;
     display: flex;
+    position: fixed;
     bottom: 0;
     justify-content: center;
     padding-bottom: 5px;

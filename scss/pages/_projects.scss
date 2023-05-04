@@ -2,8 +2,8 @@
 
 .main-project {
   @include flex-box(space-between, center);
-  height: 100%;
   flex-flow: column nowrap;
+
   & .title-projects h1 {
     color: white;
     position: relative;
@@ -59,20 +59,20 @@
         background-color: transparent;
         border: none;
       }
-      & .modal{
+      & .modal {
         background-color: rgba(128, 128, 128, 0.361);
-        &-content{
+        &-content {
           background-color: map-get($color-portfolio, background);
           border: 2px solid map-get($color-portfolio, primary);
-          & .modal-title{
+          & .modal-title {
             color: black;
           }
-          & .close{
+          & .close {
             color: red;
           }
-          &  .modal-body{
-            & figure{
-              & img{
+          & .modal-body {
+            & figure {
+              & img {
                 color: black;
               }
             }
@@ -86,6 +86,13 @@
     }
   }
 }
+.container-project {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+}
 @media (max-width: 900px) {
   .title-projects h1 {
     font-size: calc(3vw + 1.5rem);
@@ -93,6 +100,11 @@
   .projects__project {
     width: 250px;
     height: 150px;
+  }
+}
+@media (min-width: 1170px) {
+  .container-project {
+    height: 100vh;
   }
 }
 /*----------End Projects----------*/

@@ -5,6 +5,9 @@
     height: 100%;
     flex-flow: column nowrap;
     align-items: center;
+    justify-content: space-between;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
     & .main-about {
       display: flex;
       align-items: center;
@@ -87,6 +90,8 @@
     @include flex-center();
     height: 100vh;
     flex-flow: column nowrap;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
     & h1 {
       padding-top: 20px;
       font-size: calc(3vw + 1rem);
