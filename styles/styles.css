@@ -299,7 +299,7 @@ span {
 /*Start Contact*/
 @media (max-width: 900px) {
   .bodyBackground {
-    height: auto;
+    height: 100%;
   }
   .container-contact {
     display: flex;
