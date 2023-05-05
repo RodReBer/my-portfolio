@@ -308,7 +308,6 @@ span {
     align-items: center;
     height: 100%;
     flex-flow: column nowrap;
-    backdrop-filter: blur(30px);
     -webkit-backdrop-filter: blur(30px);
   }
   .container-contact h1 {
@@ -428,7 +427,6 @@ span {
     align-items: center;
     height: 100vh;
     flex-flow: column nowrap;
-    backdrop-filter: blur(30px);
     -webkit-backdrop-filter: blur(30px);
   }
   .container-contact h1 {
@@ -548,11 +546,6 @@ span {
     height: 76px;
     width: 76px;
     border: none;
-  }
-}
-@media (max-height: 925px) {
-  .container-contact {
-    height: auto;
   }
 }
 /*End Contact*/
