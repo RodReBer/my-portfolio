@@ -660,7 +660,7 @@ span {
 }
 @media (min-width: 1170px) {
   .container-project {
-    height: 100vh;
+    height: auto;
   }
 }
 /*----------End Projects----------*/
@@ -1089,7 +1089,6 @@ span {
   .footer {
     width: 100%;
     display: flex;
-    position: fixed;
     bottom: 0;
     justify-content: center;
     padding-bottom: 5px;
