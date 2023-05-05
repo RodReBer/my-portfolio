@@ -61,6 +61,7 @@
       }
       & .modal {
         background-color: rgba(128, 128, 128, 0.361);
+        height: 100vh;
         &-content {
           background-color: map-get($color-portfolio, background);
           border: 2px solid map-get($color-portfolio, primary);

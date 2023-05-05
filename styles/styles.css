@@ -550,6 +550,11 @@ span {
     border: none;
   }
 }
+@media (max-height: 925px) {
+  .container-contact {
+    height: auto;
+  }
+}
 /*End Contact*/
 /*----------Start Projects----------*/
 .main-project {
@@ -623,6 +628,7 @@ span {
 }
 .main-project .projects__project .modal {
   background-color: rgba(128, 128, 128, 0.361);
+  height: 100vh;
 }
 .main-project .projects__project .modal-content {
   background-color: #454545;
