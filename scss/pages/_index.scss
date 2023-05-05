@@ -72,6 +72,7 @@
     }
   }
 }
+
 @include desktop() {
   .container-index {
     display: flex;
@@ -126,10 +127,10 @@
             text-align: center;
             border: 1px solid map-get($color-portfolio, primary);
             border-radius: 11px;
-            &:hover{
-              box-shadow: 0px 0px 50px -14px rgba(0,0,0,0.49);
-              -webkit-box-shadow: 0px 0px 50px -14px rgba(0,0,0,0.49);
-              -moz-box-shadow: 0px 0px 50px -14px rgba(0,0,0,0.49);
+            &:hover {
+              box-shadow: 0px 0px 50px -14px rgba(0, 0, 0, 0.49);
+              -webkit-box-shadow: 0px 0px 50px -14px rgba(0, 0, 0, 0.49);
+              -moz-box-shadow: 0px 0px 50px -14px rgba(0, 0, 0, 0.49);
             }
             & span {
               padding: 5px 0.5rem 5px;

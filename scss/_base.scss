@@ -28,8 +28,6 @@ $color-portfolio: (
 );
 /*Start General*/
 body {
-  height: 100%;
-  // background-color: map-get($color-portfolio, background);
   background-image: url(../img/bg3.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -41,7 +39,7 @@ body {
 html {
   scrollbar-color: map-get($color-portfolio, primary) #e0e0e013;
   scrollbar-width: thin;
-  height: 100%;
+
 }
 a {
   text-decoration: none;

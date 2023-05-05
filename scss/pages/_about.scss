@@ -88,10 +88,8 @@
 @include desktop() {
   .container-about {
     @include flex-center();
-    height: 100vh;
+    height: 100%;
     flex-flow: column nowrap;
-    backdrop-filter: blur(30px);
-    -webkit-backdrop-filter: blur(30px);
     & h1 {
       padding-top: 20px;
       font-size: calc(3vw + 1rem);
@@ -192,11 +190,6 @@
         padding: 10px;
       }
     }
-  }
-}
-@media (max-width: 500px) {
-  .aboutSkills {
-    height: auto;
   }
 }
 /*End About*/

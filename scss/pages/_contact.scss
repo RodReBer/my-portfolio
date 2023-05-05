@@ -1,13 +1,9 @@
 /*Start Contact*/
 @include mobile() {
-  .bodyBackground {
-    height: 100%;
-  }
   .container-contact {
     @include flex-box(space-between, center);
     height: 100%;
     flex-flow: column nowrap;
-    -webkit-backdrop-filter: blur(30px);
     & h1 {
       color: white;
       position: relative;
@@ -118,9 +114,8 @@
 @include desktop() {
   .container-contact {
     @include flex-box(space-between, center);
-    height: 100vh;
+    height: 100%;
     flex-flow: column nowrap;
-    -webkit-backdrop-filter: blur(30px);
     & h1 {
       color: white;
       position: relative;

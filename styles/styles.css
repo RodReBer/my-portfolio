@@ -14,7 +14,6 @@
 
 /*Start General*/
 body {
-  height: 100%;
   background-image: url(../img/bg3.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -26,7 +25,6 @@ body {
 html {
   scrollbar-color: #00a6fb rgba(224, 224, 224, 0.0745098039);
   scrollbar-width: thin;
-  height: 100%;
 }
 
 a {
@@ -185,10 +183,8 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
     flex-flow: column nowrap;
-    backdrop-filter: blur(30px);
-    -webkit-backdrop-filter: blur(30px);
   }
   .container-about h1 {
     padding-top: 20px;
@@ -291,24 +287,15 @@ span {
     padding: 10px;
   }
 }
-@media (max-width: 500px) {
-  .aboutSkills {
-    height: auto;
-  }
-}
 /*End About*/
 /*Start Contact*/
 @media (max-width: 900px) {
-  .bodyBackground {
-    height: 100%;
-  }
   .container-contact {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100%;
     flex-flow: column nowrap;
-    -webkit-backdrop-filter: blur(30px);
   }
   .container-contact h1 {
     color: white;
@@ -425,9 +412,8 @@ span {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100vh;
+    height: 100%;
     flex-flow: column nowrap;
-    -webkit-backdrop-filter: blur(30px);
   }
   .container-contact h1 {
     color: white;
@@ -653,11 +639,6 @@ span {
   z-index: -1;
 }
 
-@media (min-width: 1170px) {
-  .container-project {
-    height: auto;
-  }
-}
 @media (max-width: 900px) {
   .title-projects h1 {
     font-size: calc(3vw + 1.5rem);
@@ -669,18 +650,12 @@ span {
 }
 /*----------End Projects----------*/
 /*----------Start Skills----------*/
-.container-skills {
-  height: auto;
-}
-
 @media (max-width: 900px) {
   .container-skills {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column nowrap;
-    backdrop-filter: blur(30px);
-    -webkit-backdrop-filter: blur(30px);
     justify-content: space-between;
   }
   .container-skills h1 {
@@ -770,17 +745,6 @@ span {
     background-color: #444444;
     border-radius: 5px;
     text-align: center;
-  }
-}
-@media (min-width: 850px) and (max-width: 900px) {
-  .container-skills {
-    height: 100%;
-  }
-}
-@media (min-width: 900px) and (max-width: 922px) {
-  .bodySkills .container-skills {
-    height: auto;
-    padding-bottom: 75px;
   }
 }
 @media (min-width: 901px) {
