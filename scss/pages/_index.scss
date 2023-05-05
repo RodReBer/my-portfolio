@@ -165,4 +165,14 @@
     @include flex-center;
   }
 }
+@media (max-height: 665px) {
+  .container-index {
+    height: auto;
+  }
+}
+@media (min-height: 835px) {
+  .container-index {
+    height: 100vh;
+  }
+}
 /*end index*/

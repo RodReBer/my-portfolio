@@ -114,7 +114,7 @@
 @include desktop() {
   .container-contact {
     @include flex-box(space-between, center);
-    height: 100%;
+    height: 100vh;
     flex-flow: column nowrap;
     & h1 {
       color: white;
@@ -230,6 +230,16 @@
     height: 76px;
     width: 76px;
     border: none;
+  }
+}
+@media (max-height: 780px) {
+  .container-contact {
+    height: auto;
+  }
+}
+@media (min-height: 835px) {
+  .container-contact {
+    height: 100vh;
   }
 }
 
