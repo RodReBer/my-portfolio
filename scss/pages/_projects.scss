@@ -93,6 +93,14 @@
   backdrop-filter: blur(30px);
   -webkit-backdrop-filter: blur(30px);
 }
+.modal-backdrop{
+  z-index: -1;
+}
+@media (min-width: 1170px) {
+  .container-project {
+    height: auto;
+  }
+}
 @media (max-width: 900px) {
   .title-projects h1 {
     font-size: calc(3vw + 1.5rem);
@@ -101,13 +109,5 @@
     width: 250px;
     height: 150px;
   }
-}
-@media (min-width: 1170px) {
-  .container-project {
-    height: auto;
-  }
-}
-.modal-backdrop{
-  z-index: -1;
 }
 /*----------End Projects----------*/

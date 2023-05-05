@@ -188,10 +188,15 @@
   .info-about {
     & a {
       & i {
-        height: 95px !important;
+        height: 95px;
         padding: 10px;
       }
     }
+  }
+}
+@media (max-width: 500px) {
+  .aboutSkills {
+    height: auto;
   }
 }
 /*End About*/
