@@ -873,6 +873,16 @@ span {
     height: auto;
   }
 }
+@media screen and (min-width: 850px) and (max-width: 900px) {
+  .container-skills {
+    height: 100vh;
+  }
+}
+@media screen and (min-width: 901px) and (max-width: 922px) {
+  .container-skills {
+    height: auto;
+  }
+}
 /*----------End Skills----------*/
 /*index*/
 .title-index {
