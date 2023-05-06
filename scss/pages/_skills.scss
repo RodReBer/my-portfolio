@@ -197,5 +197,11 @@
     height: auto;
   }
 }
+@media screen and (min-width: 500px) and (max-width: 922px){
+  .container-skills {
+    height: 100vh;
+  }
+}
+
 
 /*----------End Skills----------*/

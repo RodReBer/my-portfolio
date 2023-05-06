@@ -883,6 +883,11 @@ span {
     height: auto;
   }
 }
+@media screen and (min-width: 500px) and (max-width: 922px) {
+  .container-skills {
+    height: 100vh;
+  }
+}
 /*----------End Skills----------*/
 /*index*/
 .title-index {
@@ -1065,6 +1070,11 @@ span {
   }
 }
 @media (min-height: 835px) {
+  .container-index {
+    height: 100vh;
+  }
+}
+@media screen and (min-height: 550px) and (max-height: 665px) {
   .container-index {
     height: 100vh;
   }
