@@ -14,7 +14,7 @@
 
 /*Start General*/
 body {
-  background-image: url(../img/bg3.svg);
+  background-image: url(../img/bg5.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -673,6 +673,10 @@ span {
     height: auto;
   }
 }
+.body-projects {
+  height: 100vh;
+}
+
 /*----------End Projects----------*/
 /*----------Start Skills----------*/
 @media (max-width: 900px) {

@@ -97,11 +97,6 @@
 .modal-backdrop{
   z-index: -1;
 }
-// @media (min-width: 1170px) {
-//   .container-project {
-//     height: auto;
-//   }
-// }
 @media (max-width: 900px) {
   .title-projects h1 {
     font-size: calc(3vw + 1.5rem);
@@ -115,6 +110,9 @@
   .container-project {
     height: auto;
   }
+}
+.body-projects{
+  height: 100vh;
 }
 
 /*----------End Projects----------*/
