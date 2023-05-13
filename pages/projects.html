@@ -1,362 +1,436 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Projects</title>
-    <!-- Meta descriptions - SEO -->
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="language" content="english" />
-    <meta name="copyright" content="Rodridev inc." />
-    <meta name="author" content="Rodrigo Rey" />
-    <meta name="audience" content="all" />
-    <meta name="theme-color" content="#111111" />
-    <meta
-      name="description"
-      content="Discover my web development portfolio showcasing my design & development skills. See my projects and learn how I can create digital solutions for you."
-    />
-    <meta
-      name="keywords"
-      content="development, portfolio, html, css, javsacript, java, react, projects, skills, web"
-    />
-    <meta name="robots" content="index, all, follow" />
-    <meta name="category" content="SaaS" />
-    <!-- <meta itemprop="telephone" content="+59899999999" /> -->
-    <!-- End Meta descriptions - SEO -->
-    <link rel=”canonical” href=”https://rodridev.me/projects”>
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <!-- Google tag (gtag.js) -->
-    <script
-      defer
-      src="https://www.googletagmanager.com/gtag/js?id=G-EQL56H07B2"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
 
-      gtag("config", "G-EQL56H07B2");
-    </script>
-    <link rel="shortcut icon" href="../img/logo.webp" type="image/x-icon" />
-    <link rel="stylesheet" href="../styles/styles.css" />
-    <script
-      async
-      src="https://kit.fontawesome.com/9e08149179.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body class="body-projects">
-    <div class="container-project">
-      <main class="main-project">
-        <div class="title-projects">
-          <h1>MY <span>PROJECTS</span></h1>
-        </div>
-        <div class="projects">
-          <!--Reina-->
-          <div class="projects__project">
-            <!-- Trigger the modal with a button -->
-            <button
-              type="button"
-              class="btn btn-info btn-lg"
-              data-toggle="modal"
-              data-target="#myModalRR"
-            >
-              <img src="../img/reina-reyes.webp" alt="reina reyes" />
-              <div class="description">
-                <h2>
-                  College and high school <br />
-                  Reina Reyes
-                </h2>
-              </div>
-            </button>
+<head>
+  <title>Projects</title>
+  <!-- Meta descriptions - SEO -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="language" content="english" />
+  <meta name="copyright" content="Rodridev inc." />
+  <meta name="author" content="Rodrigo Rey" />
+  <meta name="audience" content="all" />
+  <meta name="theme-color" content="#111111" />
+  <meta name="description"
+    content="Discover my web development portfolio showcasing my design & development skills. See my projects and learn how I can create digital solutions for you." />
+  <meta name="keywords" content="development, portfolio, html, css, javsacript, java, react, projects, skills, web" />
+  <meta name="robots" content="index, all, follow" />
+  <meta name="category" content="SaaS" />
+  <!-- <meta itemprop="telephone" content="+59899999999" /> -->
+  <!-- End Meta descriptions - SEO -->
+  <link rel=”canonical” href=”https://rodridev.me/projects”>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <!-- Google tag (gtag.js) -->
+  <script defer src="https://www.googletagmanager.com/gtag/js?id=G-EQL56H07B2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-            <!-- Modal -->
-            <div class="modal fade" id="myModalRR" role="dialog">
-              <div class="modal-dialog">
-                <!-- Modal content-->
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">
-                      &times;
+    gtag("config", "G-EQL56H07B2");
+  </script>
+  <link rel="shortcut icon" href="../img/logo.webp" type="image/x-icon" />
+  <link rel="stylesheet" href="../styles/styles.css" />
+  <script async src="https://kit.fontawesome.com/9e08149179.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="body-projects">
+  <div class="container-project">
+    <main class="main-project">
+      <div class="title-projects">
+        <h1>MY <span>PROJECTS</span></h1>
+      </div>
+      <section class="projects">
+        <!--Reina reyes-->
+        <div class="projects__project">
+          <!-- Button trigger modal -->
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModalRR">
+            <img src="../img/reina-reyes.webp" alt="reina reyes" />
+            <div class="description">
+              <h2>
+                Colegio y Liceo <br>Reina Reyes
+              </h2>
+            </div>
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="myModalRR" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title fs-5" id="exampleModalLabel">Reina Reyes High school</h3>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div id="carouselReina" class="carousel slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselReina" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselReina" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselReina" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="../img/bg.svg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../img/bg.svg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../img/bg.svg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselReina"
+                      data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
                     </button>
-                    <h3 class="modal-title">
-                      College and high school Reina Reyes
-                    </h3>
-                  </div>
-                  <div class="modal-body">
-                    <figure>
-                      <img
-                        src=""
-                        alt="College and high school  
-                      Reina Reyes project"
-                      />
-                    </figure>
-                    <div class="content-modal-body"></div>
-                  </div>
-                  <div class="modal-footer">
-                    <button
-                      type="button"
-                      class="btn btn-default"
-                      data-dismiss="modal"
-                    >
-                      Close
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselReina"
+                      data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
                     </button>
-                    <a href="" class="btn btn-default"> GitHub </a>
                   </div>
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn boton-livedemo" disabled><a
+                      href="https://rodreber.github.io/Offer-system/">Live Demo</a></button>
+                  <button type="button" class="btn boton-github" disabled><a
+                      href="https://github.com/RodReBer/Offer-system">GitHub</a></button>
                 </div>
               </div>
             </div>
-          </div>
-
-          <!--Portfolio-->
-          <div class="projects__project">
-            <!-- Trigger the modal with a button -->
-            <button
-              type="button"
-              class="btn btn-info btn-lg"
-              data-toggle="modal"
-              data-target="#myModalPortfolio"
-            >
-              <img src="../img/logo.webp" alt="My portfolio" />
-              <div class="description">
-                <h2>My portfolio</h2>
-              </div>
-            </button>
-
-            <!-- Modal -->
-            <div class="modal fade" id="myModalPortfolio" role="dialog">
-              <div class="modal-dialog">
-                <!-- Modal content-->
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">
-                      &times;
-                    </button>
-                    <h3 class="modal-title">My portfolio</h3>
-                  </div>
-                  <div class="modal-body">
-                    <figure>
-                      <img src="" alt="Portfolio project" />
-                    </figure>
-                    <div class="content-modal-body"></div>
-                  </div>
-                  <div class="modal-footer">
-                    <button
-                      type="button"
-                      class="btn btn-default"
-                      data-dismiss="modal"
-                    >
-                      Close
-                    </button>
-                    <a
-                      href="https://github.com/RodReBer/my-portfolio"
-                      class="btn btn-default"
-                    >
-                      GitHub
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!--Gestion de inventarios-->
-          <div class="projects__project">
-            <!-- Trigger the modal with a button -->
-            <button
-              type="button"
-              class="btn btn-info btn-lg"
-              data-toggle="modal"
-              data-target="#myModalGDI"
-            >
-              <img src="../img/dron.webp" alt="css" />
-              <div class="description">
-                <h2>Inventory management</h2>
-              </div>
-            </button>
-
-            <!-- Modal -->
-            <div class="modal fade" id="myModalGDI" role="dialog">
-              <div class="modal-dialog">
-                <!-- Modal content-->
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">
-                      &times;
-                    </button>
-                    <h3 class="modal-title">Inventory management</h3>
-                  </div>
-                  <div class="modal-body">
-                    <figure>
-                      <img src="" alt="inventory management project" />
-                    </figure>
-                    <div class="content-modal-body"></div>
-                  </div>
-                  <div class="modal-footer">
-                    <button
-                      type="button"
-                      class="btn btn-default"
-                      data-dismiss="modal"
-                    >
-                      Close
-                    </button>
-                    <a
-                      href="https://github.com/RodReBer/Inventory-management"
-                      class="btn btn-default"
-                    >
-                      GitHub
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="projects__project">
-            <a href="">
-              <img src="../img/react.webp" alt="react" />
-              <div class="description">
-                <h2>React.js</h2>
-              </div>
-            </a>
-          </div>
-          <div class="projects__project">
-            <a href="">
-              <img src="../img/sql.webp" alt="sql" />
-              <div class="description">
-                <h2>SQL</h2>
-              </div>
-            </a>
-          </div>
-          <div class="projects__project">
-            <img src="../img/c++.webp" alt="c++" />
-            <div class="description">
-              <h2>C++</h2>
-            </div>
-          </div>
-          <div class="projects__project">
-            <img src="../img/java.webp" alt="java" />
-            <div class="description">
-              <h2>Java</h2>
-            </div>
-          </div>
-          <div class="projects__project">
-            <img src="../img/git.webp" alt="git" />
-            <div class="description">
-              <h2>Git</h2>
-            </div>
-          </div>
-          <div class="projects__project">
-            <a href="">
-              <img src="../img/mysql.webp" alt="mysql" />
-              <div class="description">
-                <h2>MySQL</h2>
-              </div>
-            </a>
-          </div>
-          <div class="projects__project">
-            <a href="">
-              <img src="../img/mongodb.webp" alt="mongodb" />
-              <div class="description">
-                <h2>Mongo DB</h2>
-              </div>
-            </a>
-          </div>
-          <div class="projects__project">
-            <a href="">
-              <img src="../img/jira.webp" alt="jira" />
-              <div class="description">
-                <h2>Jira</h2>
-              </div>
-            </a>
-          </div>
-          <div class="projects__project">
-            <a href="">
-              <img src="../img/ruby.webp" alt="ruby" />
-              <div class="description">
-                <h2>Ruby</h2>
-              </div>
-            </a>
           </div>
         </div>
-      </main>
-      <footer class="footer">
-        <ul class="footer__iconos">
-          <li class="footer__item">
-            <a
-              href="https://www.linkedin.com/in/rodrigorey2005/"
-              target="_blank"
-              ><i class="fa fa-linkedin" aria-hidden="true"></i
-            ></a>
+
+        <!--Portfolio-->
+        <div class="projects__project">
+          <!-- Button trigger modal -->
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModalPortfolio">
+            <img src="../img/logo.webp" alt="logo rodrigo rey" />
+            <div class="description">
+              <h2>
+                My portfolio
+              </h2>
+            </div>
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="myModalPortfolio" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title fs-5" id="exampleModalLabel">My Portfolio</h3>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div id="carrouselPortfolio" class="carousel slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carrouselPortfolio" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carrouselPortfolio" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carrouselPortfolio" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#carrouselPortfolio" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="../img/bg.svg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../img/bg2.svg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../img/bg3.svg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../img/bg3.svg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carrouselPortfolio"
+                      data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carrouselPortfolio"
+                      data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                  <div class="technologies">
+                    <h3>Technologies used</h3>
+                    <ul>
+                      <li>HTML</li>
+                      <li>CSS</li>
+                      <li>SASS</li>
+                      <li>Bootstrap</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn boton-livedemo"><a href="https://rodridev.me">Live Demo</a></button>
+                  <button type="button" class="btn boton-github"><a
+                      href="https://github.com/RodReBer/my-portfolio">GitHub</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Inventory management-->
+        <div class="projects__project">
+          <!-- Button trigger modal -->
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModalInventory">
+            <img src="../img/dron.webp" alt="dron image" />
+            <div class="description">
+              <h2>
+                Inventory management
+              </h2>
+            </div>
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="myModalInventory" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title fs-5" id="exampleModalLabel">Inventory management</h3>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div id="carouselInventory" class="carousel slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselInventory" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselInventory" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselInventory" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#carouselInventory" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="../img/bg.svg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../img/bg2.svg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../img/bg3.svg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../img/bg3.svg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselInventory"
+                      data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselInventory"
+                      data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn boton-github"><a
+                      href="https://github.com/RodReBer/Inventory-management">GitHub</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Job Offer-->
+        <div class="projects__project">
+          <!-- Button trigger modal -->
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModalJobOffer">
+            <img src="../img/job-offer.webp" alt="job offer" />
+            <div class="description">
+              <h2>
+                Job Offer
+              </h2>
+            </div>
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="myModalJobOffer" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title fs-5" id="exampleModalLabel">Job Offer</h3>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div id="carouselJobOffer" class="carousel slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselJobOffer" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselJobOffer" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselJobOffer" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#carouselJobOffer" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="../img/bg.svg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../img/bg2.svg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../img/bg3.svg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../img/bg3.svg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselJobOffer"
+                      data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselJobOffer"
+                      data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn boton-livedemo"><a
+                      href="https://rodreber.github.io/Offer-system/">Live Demo</a></button>
+                  <button type="button" class="btn boton-github"><a
+                      href="https://github.com/RodReBer/Offer-system">GitHub</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects__project">
+          <img src="" alt="Empty" />
+          <div class="description">
+            <h2>Empty</h2>
+          </div>
+        </div>
+
+        <div class="projects__project">
+          <img src="" alt="Empty" />
+          <div class="description">
+            <h2>Empty</h2>
+          </div>
+        </div>
+
+        <div class="projects__project">
+          <img src="" alt="Empty" />
+          <div class="description">
+            <h2>Empty</h2>
+          </div>
+        </div>
+
+        <div class="projects__project">
+          <img src="" alt="Empty" />
+          <div class="description">
+            <h2>Empty</h2>
+          </div>
+        </div>
+
+        <div class="projects__project">
+          <img src="" alt="Empty" />
+          <div class="description">
+            <h2>Empty</h2>
+          </div>
+        </div>
+
+        <div class="projects__project">
+          <img src="" alt="Empty" />
+          <div class="description">
+            <h2>Empty</h2>
+          </div>
+        </div>
+
+        <div class="projects__project">
+          <img src="" alt="Empty" />
+          <div class="description">
+            <h2>Empty</h2>
+          </div>
+        </div>
+
+        <div class="projects__project">
+          <img src="" alt="Empty" />
+          <div class="description">
+            <h2>Empty</h2>
+          </div>
+        </div>
+
+      </section>
+    </main>
+    <footer class="footer">
+      <ul class="footer__iconos">
+        <li class="footer__item">
+          <a href="https://www.linkedin.com/in/rodrigorey2005/" target="_blank"><i class="fa fa-linkedin"
+              aria-hidden="true"></i></a>
+        </li>
+        <li class="footer__item">
+          <a href="https://github.com/RodReBer" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+        </li>
+        <li class="footer__item">
+          <a href="https://www.youtube.com/@rodrigorey9706/videos" target="_blank"><i class="fa fa-youtube-play"
+              aria-hidden="true"></i></a>
+        </li>
+      </ul>
+    </footer>
+    <header class="container-index__header">
+      <nav class="nav">
+        <ul class="nav__items">
+          <li class="nav__items__item">
+            <a href="../index.html"><i class="fa fa-home" aria-hidden="true" aria-label="home"></i></a>
           </li>
-          <li class="footer__item">
-            <a href="https://github.com/RodReBer" target="_blank"
-              ><i class="fa fa-github" aria-hidden="true"></i
-            ></a>
+          <li class="nav__items__item">
+            <a href="../pages/about.html"><i class="fa fa-user" aria-hidden="true" aria-label="about me"></i></a>
           </li>
-          <li class="footer__item">
-            <a
-              href="https://www.youtube.com/@rodrigorey9706/videos"
-              target="_blank"
-              ><i class="fa fa-youtube-play" aria-hidden="true"></i
-            ></a>
+          <li class="nav__items__item">
+            <a href="../pages/skills.html"><i class="fa fa-book" aria-hidden="true" aria-label="skills"></i></a>
+          </li>
+          <li class="nav__items__item active">
+            <a href="../pages/projects.html"><i class="fa fa-folder" aria-hidden="true" aria-label="projects"></i></a>
+          </li>
+          <li class="nav__items__item">
+            <a href="../pages/contact.html"><i class="fa fa-comment-o" aria-hidden="true" aria-label="contact"></i></a>
           </li>
         </ul>
-      </footer>
-      <header class="container-index__header">
-        <nav class="nav">
-          <ul class="nav__items">
-            <li class="nav__items__item">
-              <a href="../index.html"
-                ><i class="fa fa-home" aria-hidden="true" aria-label="home"></i
-              ></a>
-            </li>
-            <li class="nav__items__item">
-              <a href="../pages/about.html"
-                ><i
-                  class="fa fa-user"
-                  aria-hidden="true"
-                  aria-label="about me"
-                ></i
-              ></a>
-            </li>
-            <li class="nav__items__item">
-              <a href="../pages/skills.html"
-                ><i
-                  class="fa fa-book"
-                  aria-hidden="true"
-                  aria-label="skills"
-                ></i
-              ></a>
-            </li>
-            <li class="nav__items__item active">
-              <a href="../pages/projects.html"
-                ><i
-                  class="fa fa-folder"
-                  aria-hidden="true"
-                  aria-label="projects"
-                ></i
-              ></a>
-            </li>
-            <li class="nav__items__item">
-              <a href="../pages/contact.html"
-                ><i
-                  class="fa fa-comment-o"
-                  aria-hidden="true"
-                  aria-label="contact"
-                ></i
-              ></a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-    </div>
-  </body>
+      </nav>
+    </header>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

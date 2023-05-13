@@ -1,118 +1,189 @@
 /*----------Start Projects----------*/
+.body-projects {
+  height: 100vh;
 
-.main-project {
-  @include flex-box(space-between, center);
-  flex-flow: column nowrap;
-
-  & .title-projects h1 {
-    color: white;
-    position: relative;
-    font-size: calc(3vw + 2rem);
-    margin-top: 20px;
-    padding-bottom: 30px;
-    & span {
-      color: map-get($color-portfolio, primary);
-    }
-  }
-  & .projects {
-    @include flex-center();
-    flex-flow: row wrap;
-    width: 80%;
+  & .container-project {
     height: auto;
-    margin-bottom: 60px;
-    gap: 20px;
-    &__project {
-      @include flex-center();
-      width: 300px;
-      height: 200px;
-      background-color: rgba(255, 255, 255, 0.1);
-      border: 2px solid map-get($color-portfolio, primary);
-      font-size: 16px;
-      text-align: center;
-      border-radius: 11px;
-      position: relative;
-      & img {
-        width: 75px;
-        height: 75px;
-      }
-      & .description {
-        @include flex-center();
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(255, 255, 255, 0.655);
-        opacity: 0;
-        transition: opacity 0.3s ease-in-out;
-        text-align: center;
-        border-radius: 11px;
-        & h2 {
-          color: black;
-          font-size: 16px;
-          font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+
+    & .main-project {
+      @include flex-box(space-between, center);
+      flex-flow: column nowrap;
+
+      & .title-projects h1 {
+        color: white;
+        position: relative;
+        font-size: calc(3vw + 2rem);
+        margin-top: 20px;
+        padding-bottom: 30px;
+
+        & span {
+          color: map-get($color-portfolio, primary);
         }
       }
-      & .btn-info {
-        width: 100%;
-        height: 100%;
-        background-color: transparent;
-        border: none;
-      }
-      & .modal {
-        background-color: rgba(128, 128, 128, 0.361);
-        height: 100vh;
-        &-content {
-          background-color: map-get($color-portfolio, background);
+
+      & .projects {
+        @include flex-center();
+        flex-flow: row wrap;
+        width: 80%;
+        height: auto;
+        margin-bottom: 60px;
+        gap: 20px;
+
+        &__project {
+          @include flex-center();
+          width: 300px;
+          height: 200px;
+          background-color: rgba(255, 255, 255, 0.1);
           border: 2px solid map-get($color-portfolio, primary);
-          & .modal-title {
-            color: black;
+          font-size: 16px;
+          text-align: center;
+          border-radius: 11px;
+          position: relative;
+
+          .modal-content {
+            & .modal-header h3 {
+              width: 100%;
+            }
+
+            & .modal-body {
+              display: flex;
+              flex-direction: column;
+
+              & .carousel-item img {
+                height: 400px;
+
+              }
+            }
           }
-          & .close {
-            color: red;
+
+          & img {
+            width: 75px;
+            height: 75px;
           }
-          & .modal-body {
-            & figure {
-              & img {
+
+          & .description {
+            @include flex-center();
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.655);
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+            text-align: center;
+            border-radius: 11px;
+
+            & h2 {
+              color: black;
+              font-size: 16px;
+              font-weight: 900;
+            }
+          }
+
+          & .btn-info {
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            border: none;
+          }
+
+          & .modal {
+            background-color: rgba(128, 128, 128, 0.361);
+            height: 100vh;
+
+            &-content {
+              background-color: map-get($color-portfolio, background);
+              border: 2px solid map-get($color-portfolio, primary);
+
+              & .modal-title {
                 color: black;
+              }
+
+              & .close {
+                color: red;
+              }
+
+              & .modal-body {
+                & figure {
+                  & img {
+                    color: black;
+                  }
+                }
               }
             }
           }
         }
+
+        &__project:hover .description {
+          opacity: 1;
+          border-radius: 11px;
+        }
       }
     }
-    &__project:hover .description {
-      opacity: 1;
-      border-radius: 11px;
+  }
+
+
+}
+
+.modal-backdrop {
+  z-index: -1;
+}
+
+.main-project .projects__project .modal {
+  height: 100% !important;
+}
+
+.modal-footer {
+  & .boton-livedemo {
+    background-color: map-get($color-portfolio, primary);
+
+    &:hover {
+      background-color: #00a7fba1;
+    }
+
+    &:active {
+      background-color: #00a7fb77 !important;
+      border-color: #00a7fb77 !important;
+    }
+  }
+
+  & .boton-github {
+    background-color: black;
+    color: white;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.700);
+      color: white;
+    }
+
+    &:active {
+      background-color: rgba(0, 0, 0, 0.500) !important;
+      color: white !important;
+      border-color: rgba(0, 0, 0, 0.500) !important;
     }
   }
 }
-.container-project {
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  backdrop-filter: blur(30px);
-  -webkit-backdrop-filter: blur(30px);
-}
-.modal-backdrop{
-  z-index: -1;
-}
+
 @media (max-width: 900px) {
   .title-projects h1 {
     font-size: calc(3vw + 1.5rem);
   }
+
   .projects__project {
     width: 250px;
     height: 150px;
   }
 }
+
 @media screen and (min-width: 903px) {
   .container-project {
     height: auto;
   }
-}
-.body-projects{
-  height: 100vh;
 }
 
 /*----------End Projects----------*/
