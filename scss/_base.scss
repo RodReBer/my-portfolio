@@ -93,45 +93,47 @@ span {
   }
 }
 
-.button {
-  display: inline-block;
-  padding-left: 0rem;
-  color: #fff;
-  font-size: 1rem;
-  transition: all 0.3s;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-
-  &:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: transparent;
-    border-radius: 10rem;
+@mixin boton() {
+  .button {
+    display: inline-block;
+    padding-left: 0rem;
+    color: #fff;
+    font-size: 1rem;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
     z-index: 1;
-  }
 
-  &:before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 0%;
-    height: 100%;
-    background-color: darken(map-get($color-portfolio, primary), 0%);
-    transition: all 0.8s;
-    z-index: -1;
-  }
-
-  &:hover {
-    cursor: pointer;
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: transparent;
+      border-radius: 10rem;
+      z-index: 1;
+    }
 
     &:before {
-      width: 100%;
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 0%;
+      height: 100%;
+      background-color: darken(map-get($color-portfolio, primary), 0%);
+      transition: all 0.8s;
+      z-index: -1;
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      &:before {
+        width: 100%;
+      }
     }
   }
 }

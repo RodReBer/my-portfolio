@@ -51,45 +51,6 @@ span {
 }
 
 /*End General*/
-.button {
-  display: inline-block;
-  padding-left: 0rem;
-  color: #fff;
-  font-size: 1rem;
-  transition: all 0.3s;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-}
-.button:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: transparent;
-  border-radius: 10rem;
-  z-index: 1;
-}
-.button:before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 0%;
-  height: 100%;
-  background-color: #00a6fb;
-  transition: all 0.8s;
-  z-index: -1;
-}
-.button:hover {
-  cursor: pointer;
-}
-.button:hover:before {
-  width: 100%;
-}
-
 /*Start About*/
 @media (max-width: 900px) {
   .container-about {
@@ -281,6 +242,44 @@ span {
     width: 100%;
     height: auto;
   }
+  .button {
+    display: inline-block;
+    padding-left: 0rem;
+    color: #fff;
+    font-size: 1rem;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .button:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border-radius: 10rem;
+    z-index: 1;
+  }
+  .button:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #00a6fb;
+    transition: all 0.8s;
+    z-index: -1;
+  }
+  .button:hover {
+    cursor: pointer;
+  }
+  .button:hover:before {
+    width: 100%;
+  }
 }
 @media (max-width: 304px) {
   .info-about a i {
@@ -419,6 +418,44 @@ span {
   }
 }
 @media (min-width: 901px) {
+  .button {
+    display: inline-block;
+    padding-left: 0rem;
+    color: #fff;
+    font-size: 1rem;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .button:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border-radius: 10rem;
+    z-index: 1;
+  }
+  .button:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #00a6fb;
+    transition: all 0.8s;
+    z-index: -1;
+  }
+  .button:hover {
+    cursor: pointer;
+  }
+  .button:hover:before {
+    width: 100%;
+  }
   .container-contact {
     display: flex;
     justify-content: space-between;
@@ -1035,6 +1072,44 @@ span {
   }
 }
 @media (min-width: 901px) {
+  .button {
+    display: inline-block;
+    padding-left: 0rem;
+    color: #fff;
+    font-size: 1rem;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .button:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border-radius: 10rem;
+    z-index: 1;
+  }
+  .button:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #00a6fb;
+    transition: all 0.8s;
+    z-index: -1;
+  }
+  .button:hover {
+    cursor: pointer;
+  }
+  .button:hover:before {
+    width: 100%;
+  }
   .container-index {
     display: flex;
     height: 100vh;

@@ -213,7 +213,9 @@
       height: auto;
     }
   }
+  @include boton();
 }
+
 
 @media (max-width: 304px) {
   .info-about {
