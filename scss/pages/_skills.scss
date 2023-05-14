@@ -5,30 +5,36 @@
     @include flex-center();
     flex-flow: column nowrap;
     justify-content: space-between;
+
     & h1 {
       color: white;
       position: relative;
       font-size: calc(3vw + 2rem);
       margin-top: 50px;
       text-align: center;
+
       & span {
         color: map-get($color-portfolio, primary);
       }
     }
+
     & .main-skills {
       @include flex-center();
       width: 80%;
       height: 100%;
       flex-flow: column nowrap;
+
       & .content-skills {
         display: flex;
         flex-flow: column nowrap;
         gap: 20px;
+
         & .skills {
           display: flex;
           flex-flow: row wrap;
           gap: 20px;
           justify-content: center;
+
           & .skill {
             @include flex-center();
             width: 120px;
@@ -40,15 +46,18 @@
             text-align: center;
             border-radius: 11px;
             position: relative;
+
             &:active .description {
               opacity: 1;
               border-radius: 11px;
             }
+
             & img {
               width: 85px;
               height: 85px;
               border-radius: 11px;
             }
+
             & .description {
               @include flex-center();
               position: absolute;
@@ -63,6 +72,7 @@
               border-radius: 11px;
               cursor: default;
               user-select: none;
+
               & h2 {
                 color: black;
                 font-size: 16px;
@@ -71,6 +81,7 @@
             }
           }
         }
+
         & .categories {
           display: flex;
           flex-flow: row wrap;
@@ -78,6 +89,7 @@
           gap: 5px;
           justify-content: space-around;
           width: 100%;
+
           & a {
             padding: 0px 10px 0px 10px;
             background-color: #444444;
@@ -89,6 +101,7 @@
     }
   }
 }
+
 @media (min-width: 901px) {
   .container-skills {
     @include flex-center();
@@ -96,21 +109,25 @@
     flex-flow: column nowrap;
     backdrop-filter: blur(30px);
     -webkit-backdrop-filter: blur(30px);
+
     & h1 {
       color: white;
       position: relative;
       font-size: calc(3vw + 1rem);
       margin-top: 50px;
       padding-bottom: 40px;
+
       & span {
         color: map-get($color-portfolio, primary);
       }
     }
+
     & .main-skills {
       @include flex-center();
       width: 80%;
       height: 100%;
       flex-flow: column nowrap;
+
       & .content-skills {
         display: flex;
         flex-flow: column nowrap;
@@ -118,6 +135,7 @@
         height: 100%;
         width: 90vw;
         max-width: 1000px;
+
         & .categories {
           display: flex;
           flex-flow: row wrap;
@@ -125,6 +143,7 @@
           gap: 5px;
           justify-content: space-around;
           width: 100%;
+
           & a {
             padding: 0px 10px 0px 10px;
             background-color: #444444;
@@ -132,11 +151,13 @@
             text-align: center;
           }
         }
+
         & .skills {
           display: flex;
           flex-flow: row wrap;
           gap: 20px;
           justify-content: center;
+
           & .skill {
             @include flex-center();
             width: 150px;
@@ -148,14 +169,17 @@
             text-align: center;
             border-radius: 11px;
             position: relative;
+
             & img {
               width: 85px;
               height: 85px;
             }
+
             &:hover .description {
               opacity: 1;
               border-radius: 11px;
             }
+
             & .description {
               @include flex-center();
               position: absolute;
@@ -170,6 +194,7 @@
               border-radius: 11px;
               cursor: default;
               user-select: none;
+
               & h2 {
                 color: black;
                 font-size: 16px;
@@ -182,22 +207,26 @@
     }
   }
 }
+
 @media (max-height: 760px) {
   .container-skills {
     height: auto;
   }
 }
+
 @media screen and (min-width: 850px) and (max-width: 900px) {
   .container-skills {
     height: 100vh;
   }
 }
+
 @media screen and (min-width: 901px) and (max-width: 922px) {
   .container-skills {
     height: auto;
   }
 }
-@media screen and (min-width: 675px) and (max-width: 922px){
+
+@media screen and (min-width: 675px) and (max-width: 922px) {
   .container-skills {
     height: 100vh;
   }

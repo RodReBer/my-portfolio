@@ -185,5 +185,29 @@
     height: auto;
   }
 }
+.technologies {
+  & h3 {
+    color: white;
+  }
 
+  & ul {
+    @include flex-center();
+    gap: 10px;
+    flex-flow: row wrap;
+
+    & li {
+      background-color: #00a6fb;
+      padding: 5px;
+      border-radius: 5.5px;
+      color: black;
+      font-weight: 500;
+      font-size: 20px;
+      box-shadow: 0px 0px 107px -38px rgba(0, 0, 0, 1);
+      -webkit-box-shadow: 0px 0px 107px -38px rgba(0, 0, 0, 1);
+      -moz-box-shadow: 0px 0px 107px -38px rgba(0, 0, 0, 1);
+      cursor: context-menu;
+      user-select: none;
+    }
+  }
+}
 /*----------End Projects----------*/

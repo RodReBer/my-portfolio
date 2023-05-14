@@ -3,6 +3,7 @@
   src: url(../fonts/popinsregular.ttf);
   font-display: swap;
 }
+
 /*Reset*/
 * {
   margin: 0;
@@ -12,6 +13,7 @@
   // transition: all 0.8s;
   /* border: 1px solid red; */
 }
+
 $color-portfolio: (
   // first option
   //  primary: #ffb300,
@@ -26,6 +28,7 @@ $color-portfolio: (
   // background: #111111,
   // secondary: #2b2a2a
 );
+
 /*Start General*/
 body {
   background-image: url(../img/bg5.svg);
@@ -39,26 +42,31 @@ body {
 html {
   scrollbar-color: map-get($color-portfolio, primary) #e0e0e013;
   scrollbar-width: thin;
-
 }
+
 a {
   text-decoration: none;
   color: white;
 }
+
 ul {
   list-style: none;
   padding: 0;
 }
+
 ::selection {
   color: white;
   background: map-get($color-portfolio, primary);
 }
+
 span {
   color: white;
 }
+
 .freelance #green {
   color: #5be85b;
 }
+
 /*End General*/
 
 @mixin flex-center {
@@ -66,21 +74,25 @@ span {
   justify-content: center;
   align-items: center;
 }
+
 @mixin flex-box($justify, $align) {
   display: flex;
   justify-content: $justify;
   align-items: $align;
 }
+
 @mixin mobile() {
   @media (max-width: 900px) {
     @content;
   }
 }
+
 @mixin desktop() {
   @media (min-width: 901px) {
     @content;
   }
 }
+
 .button {
   display: inline-block;
   padding-left: 0rem;
@@ -90,6 +102,7 @@ span {
   position: relative;
   overflow: hidden;
   z-index: 1;
+
   &:after {
     content: "";
     position: absolute;
@@ -101,6 +114,7 @@ span {
     border-radius: 10rem;
     z-index: 1;
   }
+
   &:before {
     content: "";
     position: absolute;
@@ -112,8 +126,10 @@ span {
     transition: all 0.8s;
     z-index: -1;
   }
+
   &:hover {
     cursor: pointer;
+
     &:before {
       width: 100%;
     }

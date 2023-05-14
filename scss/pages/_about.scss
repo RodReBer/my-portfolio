@@ -8,34 +8,41 @@
     justify-content: space-between;
     backdrop-filter: blur(30px);
     -webkit-backdrop-filter: blur(30px);
+
     & .main-about {
       display: flex;
       align-items: center;
       flex-flow: column nowrap;
+
       & h1 {
         color: white;
         position: relative;
         font-size: calc(3vw + 2rem);
         top: 50px;
         margin-bottom: 30px;
+
         & span {
           color: map-get($color-portfolio, primary);
         }
       }
+
       & .figure-about {
         display: flex;
         justify-content: center;
+
         & img {
           min-width: 100px;
           width: 100%;
           height: auto;
         }
       }
+
       & .info-about {
         display: flex;
         flex-flow: column nowrap;
         padding: 0px 20px 0px 20px;
         gap: 10px;
+
         & a {
           @include flex-box(space-between, center);
           flex-flow: row nowrap;
@@ -45,10 +52,12 @@
           text-align: center;
           border: 1px solid map-get($color-portfolio, primary);
           border-radius: 11px;
+
           & span {
             font-size: 30px;
             padding: 0px 1% 0px;
           }
+
           & i {
             background-color: map-get($color-portfolio, primary);
             width: 70px;
@@ -58,22 +67,27 @@
             min-height: 50px;
           }
         }
+
         & h2 {
           color: white;
           font-size: 35px;
         }
+
         & .container-info {
           display: flex;
           flex-flow: row nowrap;
           gap: 5vw;
           justify-content: space-between;
+
           & p {
             color: white;
           }
+
           & h3 {
             color: rgba(255, 255, 255, 0.504);
             font-weight: 600;
           }
+
           & .row1,
           .row2 {
             display: flex;
@@ -85,28 +99,34 @@
     }
   }
 }
+
 @include desktop() {
   .container-about {
     @include flex-center();
     height: 100vh;
     flex-flow: column nowrap;
+
     & h1 {
       padding-top: 20px;
       font-size: calc(3vw + 1rem);
     }
+
     & .main-about .title h1 {
       color: white;
+
       & span {
         color: map-get($color-portfolio, primary);
       }
     }
   }
+
   .main-about {
     @include flex-center();
     width: 80%;
     height: 100%;
     flex-flow: column nowrap;
   }
+
   .content-about {
     height: 100%;
     width: 90vw;
@@ -114,15 +134,18 @@
     flex-flow: row-reverse nowrap;
     justify-content: space-around;
     margin-bottom: 100px;
+
     & .info-about {
       display: flex;
       flex-flow: column nowrap;
       gap: 30px;
       justify-content: center;
+
       & .title {
         color: white;
         font-size: 35px;
       }
+
       & .container-info {
         display: flex;
         flex-flow: row nowrap;
@@ -131,19 +154,23 @@
       }
     }
   }
+
   .container-info p {
     color: white;
   }
+
   .container-info h3 {
     color: rgba(255, 255, 255, 0.504);
     font-weight: 600;
   }
+
   .container-info .row1,
   .container-info .row2 {
     display: flex;
     flex-flow: column nowrap;
     gap: 15px;
   }
+
   .info-about a {
     @include flex-box(space-between, center);
     flex-flow: row nowrap;
@@ -153,10 +180,12 @@
     text-align: center;
     border: 1px solid map-get($color-portfolio, primary);
     border-radius: 11px;
+
     & span {
       font-size: 30px;
       padding: 0px 1% 0px;
     }
+
     & i {
       background-color: map-get($color-portfolio, primary);
       width: 70px;
@@ -164,17 +193,20 @@
       border-radius: 10px;
       height: 100%;
     }
+
     &:hover {
       box-shadow: 0px 0px 50px -14px rgba(0, 0, 0, 0.49);
       -webkit-box-shadow: 0px 0px 50px -14px rgba(0, 0, 0, 0.49);
       -moz-box-shadow: 0px 0px 50px -14px rgba(0, 0, 0, 0.49);
     }
   }
+
   .figure-about {
     display: flex;
     align-items: center;
     height: 100%;
     width: 600px;
+
     & img {
       min-width: 400px;
       width: 100%;
@@ -182,6 +214,7 @@
     }
   }
 }
+
 @media (max-width: 304px) {
   .info-about {
     & a {
@@ -192,14 +225,17 @@
     }
   }
 }
+
 @media (max-height: 665px) {
   .container-about {
     height: auto;
   }
 }
+
 @media (min-height: 835px) {
   .container-about {
     height: 100vh;
   }
 }
+
 /*End About*/

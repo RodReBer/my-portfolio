@@ -8,19 +8,23 @@
     justify-content: center;
     background-color: #2b2a2aad;
     z-index: 2;
+
     & .nav {
       display: flex;
       justify-content: center;
       width: 100%;
+
       &__items {
         width: 100%;
         @include flex-box(space-around, center);
         flex-flow: row nowrap;
         text-align: center;
         list-style: none;
+
         & .active a {
           background-color: map-get($color-portfolio, primary);
         }
+
         & li {
           width: 100%;
           @include flex-box(space-around, center);
@@ -28,9 +32,11 @@
           text-align: center;
           list-style: none;
         }
+
         &__item {
           padding: 2px 0px 2px 0px;
         }
+
         &__item a {
           width: 70px;
           height: 70px;
@@ -42,6 +48,7 @@
           flex-flow: column;
           text-decoration: none;
           justify-content: center;
+
           &:hover {
             background-color: map-get($color-portfolio, primary);
           }
@@ -50,6 +57,7 @@
     }
   }
 }
+
 @media (min-width: 901px) {
   .nav__items {
     display: flex;
@@ -58,12 +66,14 @@
     text-align: center;
     gap: 20px;
     list-style: none;
+
     & .active a {
       background-color: map-get($color-portfolio, primary);
       box-shadow: 10px 0px 13px -6px rgba(0, 0, 0, 1);
       -webkit-box-shadow: 10px 0px 13px -6px rgba(0, 0, 0, 1);
       -moz-box-shadow: 10px 0px 13px -6px rgba(0, 0, 0, 1);
     }
+
     & li {
       display: flex;
       flex-flow: column nowrap;
@@ -72,6 +82,7 @@
       gap: 20px;
       list-style: none;
     }
+
     &__item a {
       width: 5.5vw;
       height: 5.5vw;
@@ -89,6 +100,7 @@
       box-shadow: 10px 0px 13px -6px rgba(0, 0, 0, 1) inset;
       -webkit-box-shadow: 10px 0px 13px -6px rgba(0, 0, 0, 1) inset;
       -moz-box-shadow: 10px 0px 13px -6px rgba(0, 0, 0, 1) inset;
+
       &:hover {
         background-color: map-get($color-portfolio, primary);
         box-shadow: 10px 0px 13px -6px rgba(0, 0, 0, 1);
@@ -98,4 +110,5 @@
     }
   }
 }
+
 /*End nav*/
