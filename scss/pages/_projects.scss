@@ -47,6 +47,9 @@
           .modal-content {
             & .modal-header h3 {
               width: 100%;
+              color: white;
+              font-size: 25px !important;
+              text-shadow: .5px .5px .5px #00a6fb;
             }
 
             & .modal-body {
@@ -54,7 +57,7 @@
               flex-direction: column;
 
               & .carousel-item img {
-                height: 400px;
+                height: auto;
 
               }
             }
@@ -185,6 +188,7 @@
     height: auto;
   }
 }
+
 .technologies {
   & h3 {
     color: white;
@@ -207,7 +211,44 @@
       -moz-box-shadow: 0px 0px 107px -38px rgba(0, 0, 0, 1);
       cursor: context-menu;
       user-select: none;
+
+    }
+
+    .tech {
+      &-html:hover {
+        background-color: #e44d26;
+      }
+
+      &-css:hover {
+        background-color: #1572b6;
+      }
+
+      &-sass:hover {
+        background-color: #cb6699;
+      }
+
+      &-bootstrap:hover {
+        background-color: #533979;
+      }
+
+      &-java-swing:hover {
+        background-color: #021d5a;
+      }
+
+      &-java:hover {
+        background-color: #ea2d2e;
+      }
+
+      &-react:hover {
+        background-color: #61dafb;
+      }
+
+      &-javascript:hover {
+        background-color: #e5a228;
+      }
+
     }
   }
 }
+
 /*----------End Projects----------*/

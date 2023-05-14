@@ -103,6 +103,7 @@ span {
     text-align: center;
     border: 1px solid #00a6fb;
     border-radius: 11px;
+    background-color: #111111;
   }
   .container-about .main-about .info-about a span {
     font-size: 30px;
@@ -647,13 +648,16 @@ span {
 }
 .body-projects .container-project .main-project .projects__project .modal-content .modal-header h3 {
   width: 100%;
+  color: white;
+  font-size: 25px !important;
+  text-shadow: 0.5px 0.5px 0.5px #00a6fb;
 }
 .body-projects .container-project .main-project .projects__project .modal-content .modal-body {
   display: flex;
   flex-direction: column;
 }
 .body-projects .container-project .main-project .projects__project .modal-content .modal-body .carousel-item img {
-  height: 400px;
+  height: auto;
 }
 .body-projects .container-project .main-project .projects__project img {
   width: 75px;
@@ -775,6 +779,30 @@ span {
   -moz-box-shadow: 0px 0px 107px -38px rgb(0, 0, 0);
   cursor: context-menu;
   user-select: none;
+}
+.technologies ul .tech-html:hover {
+  background-color: #e44d26;
+}
+.technologies ul .tech-css:hover {
+  background-color: #1572b6;
+}
+.technologies ul .tech-sass:hover {
+  background-color: #cb6699;
+}
+.technologies ul .tech-bootstrap:hover {
+  background-color: #533979;
+}
+.technologies ul .tech-java-swing:hover {
+  background-color: #021d5a;
+}
+.technologies ul .tech-java:hover {
+  background-color: #ea2d2e;
+}
+.technologies ul .tech-react:hover {
+  background-color: #61dafb;
+}
+.technologies ul .tech-javascript:hover {
+  background-color: #e5a228;
 }
 
 /*----------End Projects----------*/
@@ -1061,6 +1089,7 @@ span {
     border: 1px solid #00a6fb;
     border-radius: 11px;
     margin: 10px 10vw 0px 10vw;
+    background-color: #111111;
   }
   .container-index__main .contenedor .presentation a span {
     padding: 0px 0.5rem;
