@@ -64,7 +64,8 @@
             border: 10px solid map-get($color-portfolio, primary);
             border-radius: 10px;
             height: 100%;
-            min-height: 50px;
+            min-height: 60px;
+            @include flex-center();
           }
         }
 

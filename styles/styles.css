@@ -114,7 +114,10 @@ span {
     border: 10px solid #00a6fb;
     border-radius: 10px;
     height: 100%;
-    min-height: 50px;
+    min-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .container-about .main-about .info-about h2 {
     color: white;
