@@ -34,7 +34,6 @@ a {
 
 ul {
   list-style: none;
-  padding: 0;
 }
 
 ::selection {
@@ -755,6 +754,11 @@ span {
 @media screen and (min-width: 903px) {
   .container-project {
     height: auto;
+  }
+}
+@media (min-width: 930px) {
+  .container-project {
+    height: 100% !important;
   }
 }
 .technologies h3 {

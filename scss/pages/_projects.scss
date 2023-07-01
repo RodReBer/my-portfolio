@@ -188,7 +188,11 @@
     height: auto;
   }
 }
-
+@media (min-width: 930px) {
+  .container-project {
+    height: 100% !important;
+  }
+}
 .technologies {
   & h3 {
     color: white;
